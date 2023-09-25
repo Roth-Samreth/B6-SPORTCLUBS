@@ -1,0 +1,19 @@
+@import "../component/mixin";
+footer{
+    height: 250px;
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+.content-left{
+    @include dis-flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+}
+.list{
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: start;
+}

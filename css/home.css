@@ -12,6 +12,36 @@ button {
   border: none;
 }
 
+footer {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.content-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-items: start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -130,6 +160,7 @@ body {
   align-items: center;
   padding: 30px;
   gap: 10px;
+  color: white;
 }
 
 .container {
@@ -158,4 +189,46 @@ body {
 
 .text {
   text-align: center;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.v-vision {
+  background-color: #fff;
+  width: 50%;
+  max-width: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.v-vision .text {
+  text-align: justify;
+}
+
+.v-mission {
+  background-color: #fff;
+  width: 50%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 10px;
+}
+.v-mission .text {
+  text-align: justify;
 }
