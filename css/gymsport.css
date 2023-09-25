@@ -1,8 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .card {
+  background-color: white;
+  width: 450px;
+  height: 600px;
   display: flex;
   flex-direction: column;
+}
+.card .box {
+  background-image: url(../../Image/Gymnastic/Cycling.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+}
+.card .description {
+  width: 100%;
+  height: 50%;
 }
 
 button {
@@ -60,6 +75,10 @@ footer {
 
 iframe {
   width: 100%;
+}
+
+body {
+  background-color: #3E4148;
 }
 
 * {
@@ -160,4 +179,83 @@ button {
 }
 button a {
   text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  justify-content: center;
+}
+
+.some-text {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.some-text .first__text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.some-text .first__text .question {
+  width: 50%;
+  max-width: 643px;
+}
+.some-text .first__text .question h1 {
+  font-size: 60px;
+}
+.some-text .first__text .__text {
+  width: 50%;
+  max-width: 643px;
+  padding: 10px;
+}
+.some-text .first__text .__text p {
+  font-size: 20px;
+  text-align: justify;
+}
+.some-text .second__text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.some-text .second__text .second__text1 {
+  width: 50%;
+  max-width: 643px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.gym-content {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }

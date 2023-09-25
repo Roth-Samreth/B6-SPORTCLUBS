@@ -4,9 +4,6 @@
 * {
   @include universe;
 }
-body {
-  background-color: $bg-color;
-}
 .service {
   max-height: 40vh;
   @include dis-flex;
