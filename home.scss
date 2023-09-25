@@ -11,6 +11,7 @@ body{
     max-height: 40vh;
     @include dis-flex;
     padding: 30px;
+    gap: 10px;
 }
 .container{
     width: 100%;
@@ -18,9 +19,10 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-.img{
-    @include dis-flex;
-    align-items: center;
+.image{
+    img{
+        max-width: 100px
+    }
 }
 .box{
     @include dis-flex;    
