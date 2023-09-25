@@ -21,9 +21,10 @@ body{
 }
 .image{
     img{
-        max-width: 100px
+        max-width: 100px;
     }
 }
 .box{
+    max-width: 200px;
     @include dis-flex;    
 }

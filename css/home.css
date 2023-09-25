@@ -147,6 +147,7 @@ body {
 }
 
 .box {
+  max-width: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
