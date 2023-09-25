@@ -41,6 +41,7 @@ footer {
   align-items: center;
   flex-direction: row;
   justify-content: start;
+  gap: 20px;
 }
 
 * {
