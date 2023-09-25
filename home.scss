@@ -1,3 +1,27 @@
 @import"sass/main";
 @import"sass/component/nav";
 @import "sass/component/header";
+*{
+    @include universe;
+}
+body{
+    background-color: $bg-color;
+}
+.service{
+    max-height: 40vh;
+    @include dis-flex;
+    padding: 30px;
+}
+.container{
+    width: 100%;
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.img{
+    @include dis-flex;
+    align-items: center;
+}
+.box{
+    @include dis-flex;    
+}
