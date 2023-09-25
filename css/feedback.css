@@ -34,6 +34,16 @@ footer {
   gap: 40px;
 }
 
+.content-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .list {
   display: flex;
   justify-content: center;
@@ -42,6 +52,10 @@ footer {
   flex-direction: row;
   justify-content: start;
   gap: 20px;
+}
+
+iframe {
+  width: 100%;
 }
 
 * {
