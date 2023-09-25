@@ -13,6 +13,10 @@ nav {
   padding: 0 30px;
 }
 
+.logo img {
+  width: 80px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -51,4 +55,42 @@ ul li a:hover {
 ul li:hover ul.dropdown {
   transition: 0.5s ease;
   display: block;
+}
+
+header {
+  height: 70vh;
+  max-height: 700px;
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.head-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50%;
+  max-width: 700px;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-text .text1 {
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-book {
+  align-self: flex-end;
+  padding: 10px;
 }
