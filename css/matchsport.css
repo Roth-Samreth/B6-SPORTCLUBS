@@ -197,7 +197,7 @@ input:checked::before {
 }
 
 .discription {
-  color: white;
+  background-color: #fff;
   padding: 60px;
 }
 .discription .disc-top {
