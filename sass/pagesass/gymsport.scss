@@ -60,3 +60,19 @@ header{
     flex-wrap: wrap;
     gap: 30px;
 }
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    .box{
+        background-image: url(../../Image/Gymnastic/Cycling.jpg);
+    }
+    .box1{
+        background-image: url(../../Image/Gymnastic/Cable\ Chest\ Press..jpg);
+    }
+    .box2{
+        background-image: url(../../Image/Gymnastic/john-arano-h4i9G-de7Po-unsplash.jpg);
+    }
+    .box3{
+        background-image: url(../../Image/Gymnastic/Cycling.jpg);
+    }
+}

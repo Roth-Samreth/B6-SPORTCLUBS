@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .card {
-  width: 450px;
-  height: 600px;
+  width: 430px;
+  height: 500px;
   display: flex;
   flex-direction: column;
 }
-.card .box {
-  background-image: url(../../Image/Gymnastic/Cycling.jpg);
+.card .box, .card .box1, .card .box2, .card .box3, .card .box4,
+.card .box5, .card .box6, .card .box7, .card .box8 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 10px 10px 0 0;
   width: 100%;
   height: 50%;
 }
