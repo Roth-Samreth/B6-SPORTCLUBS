@@ -2,6 +2,7 @@
 @import"../component/nav";
 @import "../component/card";
 @import "../component/favorite";
+@import "../component/header";
 
 .cover {
     h1 {
@@ -9,8 +10,14 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 60px;
+        // font-size: 60px;
         color: white;
+    }
+    img {
+        height: 70vh;
+        max-height: 700px;
+        object-fit: cover;
+        
     }
 }
 
@@ -22,13 +29,14 @@
         padding: 25px;
 
         h1 {
+            font-size: 60px;
             width: 400px;
-            text-align: center;
         }
 
         p {
+            font-size: 20px;
             width: 550px;
-            flex-shrink: 0;
+            text-align: justify;
         }
     }
     .disc-bottom {
@@ -38,7 +46,9 @@
         justify-content: space-between;
         .disc-right,.disc-left{
             width: 50%;
-            max-width: 643px;
+            max-width: 633px;
+            padding: 30px;
+            text-align: justify;
         }
     }
 }

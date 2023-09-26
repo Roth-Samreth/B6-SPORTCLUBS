@@ -187,13 +187,59 @@ input:checked::before {
   color: white;
 }
 
+header {
+  height: 70vh;
+  max-height: 700px;
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.head-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50%;
+  max-width: 700px;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-text .text1 {
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  align-self: flex-end;
+}
+a button {
+  padding: 10px;
+}
+
 .cover h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 60px;
   color: white;
+}
+.cover img {
+  height: 70vh;
+  max-height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .discription {
@@ -205,12 +251,13 @@ input:checked::before {
   padding: 25px;
 }
 .discription .disc-top h1 {
+  font-size: 60px;
   width: 400px;
-  text-align: center;
 }
 .discription .disc-top p {
+  font-size: 20px;
   width: 550px;
-  flex-shrink: 0;
+  text-align: justify;
 }
 .discription .disc-bottom {
   width: 100%;
@@ -223,7 +270,9 @@ input:checked::before {
 }
 .discription .disc-bottom .disc-right, .discription .disc-bottom .disc-left {
   width: 50%;
-  max-width: 643px;
+  max-width: 633px;
+  padding: 30px;
+  text-align: justify;
 }
 
 .sports {
@@ -243,4 +292,4 @@ input:checked::before {
   flex-direction: column;
   align-items: center;
   padding: 0 10px;
-}
+}/*# sourceMappingURL=matchsport.css.map */
