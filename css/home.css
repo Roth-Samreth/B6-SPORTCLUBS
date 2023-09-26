@@ -245,7 +245,7 @@ main .mission {
 }
 main .mission .vision-container,
 main .mission .mission-container {
-  width: 47%;
+  width: 49%;
   background-color: #fff;
   text-align: center;
   padding: 10px;
@@ -322,16 +322,14 @@ main .mission .mission-container {
   }
   .mission {
     width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
+    margin: auto;
     justify-content: center;
-    align-items: center;
   }
   .mission .vision-container,
   .mission .mission-container {
-    width: 80%;
+    width: 100%;
   }
   footer {
     display: flex;
