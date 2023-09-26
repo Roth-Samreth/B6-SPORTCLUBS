@@ -140,6 +140,25 @@ ul li:hover ul.dropdown {
   display: block;
 }
 
+<<<<<<< HEAD
+.card {
+  max-width: 320px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.card .box, .card .box1, .card .box2, .card .box3, .card .box4,
+.card .box5, .card .box6, .card .box7, .card .box8 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 50%;
+}
+.card .description {
+  height: 50%;
+=======
 input {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -156,6 +175,7 @@ input::before {
 input:checked::before {
   content: url(../../Image/Icon/heart.png);
   color: white;
+>>>>>>> 96ffac73302d927428b0af4d7ed1220779db13dd
 }
 
 .cover h1 {
@@ -195,4 +215,27 @@ input:checked::before {
 .discription .disc-bottom .disc-right, .discription .disc-bottom .disc-left {
   width: 50%;
   max-width: 643px;
+<<<<<<< HEAD
 }
+
+.g-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.card .box {
+  background-image: url(../../Image/Sports/Snooker.jpg);
+}/*# sourceMappingURL=matchsport.css.map */
+=======
+}
+>>>>>>> 96ffac73302d927428b0af4d7ed1220779db13dd
