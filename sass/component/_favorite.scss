@@ -1,14 +1,13 @@
 input {
     appearance: none;
     padding: 9px 25px;
-    background-color: cadetblue;
     border-radius: 5px;
 }
-input::after {
-    content: "Favorite";
+input::before {
+    content: url(../../Image/Icon/heart01.png);
     color: white;
 }
 input:checked::before {
-    content: "Added to Favorite";
+    content: url(../../Image/Icon/heart.png);
     color: white;
 }
