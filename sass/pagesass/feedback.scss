@@ -1,16 +1,18 @@
 @import"../main";
 @import"../component/nav";
 main{
+    background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+    background-size: cover;
     height: 80vh;
     width: 100%;
     color: white;
     display: flex;
     align-items: center;
     form{
-        background: gray;
-        height: 62vh;
+        background: rgba(0,0,0,0.7);
         width: 30%;
-        padding: 0 20px 0 20px;
+        max-width: 650px;
+        padding: 20px;
         margin-left: 35px;
         border-radius: 15px;
     }
