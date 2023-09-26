@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .card {
-  background-color: white;
   width: 450px;
   height: 600px;
   display: flex;
@@ -75,6 +74,10 @@ footer {
 
 iframe {
   width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
