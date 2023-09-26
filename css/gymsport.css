@@ -94,6 +94,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+  position: sticky;
+  top: 0;
 }
 
 .logo img {
