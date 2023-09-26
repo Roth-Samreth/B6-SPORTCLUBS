@@ -1,0 +1,59 @@
+@import "../component/mixin";
+.vdo{
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    video{
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+}
+.form{
+    @include dis-flex;
+    width: 50%;
+    // max-width: 650px;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    form{
+        width: 60%;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    h1{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .full-name, .email, .phone, .feedback{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .submit{
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    input{
+        padding-left: 10px;
+        border: none;
+    }
+    .full-name input, .email input, .phone input{
+        height: 4vh;
+        border-radius: 6px;
+    }
+    .feedback input{
+        height: 10vh;
+        border-radius: 6px;
+    }
+    button{
+        background: orange;
+        color: white;
+        height: 5vh;
+        width: 100px;
+        border-radius: 10px;
+        border: none;
+    }
+}

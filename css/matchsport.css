@@ -198,7 +198,7 @@ header {
 }
 
 .head-text {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 50%;
   max-width: 700px;
   height: 100%;
@@ -228,6 +228,11 @@ a button {
   padding: 10px;
 }
 
+header {
+  background-image: url("https://idme-marketplace.s3.amazonaws.com/3lbkb1gop83ofb3112kt7z9xvw81");
+  justify-content: center;
+}
+
 .cover h1 {
   position: absolute;
   top: 50%;
@@ -245,19 +250,25 @@ a button {
 .discription {
   background-color: #fff;
   padding: 60px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .discription .disc-top {
   display: flex;
   padding: 25px;
 }
 .discription .disc-top h1 {
-  font-size: 60px;
   width: 400px;
+  text-align: center;
 }
 .discription .disc-top p {
   font-size: 20px;
   width: 550px;
-  text-align: justify;
+  flex-shrink: 0;
 }
 .discription .disc-bottom {
   width: 100%;
@@ -276,7 +287,15 @@ a button {
 }
 
 .sports {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
   padding: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .card {
@@ -284,6 +303,30 @@ a button {
   border-radius: 10px;
 }
 .card .box {
+  background-image: url(../../Image/Sports/Rothanak.jpg);
+}
+.card .box1 {
+  background-image: url(../../Image/Sports/Badminton.jpg);
+}
+.card .box2 {
+  background-image: url(../../Image/Sports/Tennis.jpg);
+}
+.card .box3 {
+  background-image: url(../../Image/Sports/Basketball.jpg);
+}
+.card .box4 {
+  background-image: url(../../Image/Gymnastic/Petaques.jpg);
+}
+.card .box5 {
+  background-image: url(../../Image/Sports/Dancing.jpg);
+}
+.card .box6 {
+  background-image: url(../../Image/Sports/Volley\ ball.webp);
+}
+.card .box7 {
+  background-image: url(../../Image/Sports/Bowling.jpg);
+}
+.card .box8 {
   background-image: url(../../Image/Sports/Snooker.jpg);
 }
 .card .description {
