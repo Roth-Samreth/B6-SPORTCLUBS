@@ -1,2 +1,82 @@
 @import"../main";
 @import"../component/nav";
+main{
+    height: 80vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    form{
+        background: gray;
+        height: 62vh;
+        width: 30%;
+        padding: 0 20px 0 20px;
+        margin-left: 35px;
+        border-radius: 15px;
+    }
+    h1{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .full-name, .email, .phone, .feedback{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .submit{
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    input{
+        padding-left: 10px;
+        border: none;
+    }
+    .full-name input, .email input, .phone input{
+        height: 4vh;
+        border-radius: 6px;
+    }
+    .feedback input{
+        height: 10vh;
+        border-radius: 6px;
+    }
+    button{
+        background: orange;
+        color: white;
+        height: 5vh;
+        width: 100px;
+        border-radius: 10px;
+        border: none;
+    }
+    footer{
+        height: 250px;
+        @include dis-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .content-left{
+        @include dis-flex;
+        align-items: start;
+        justify-content: space-between;
+        color: white;
+        gap: 40px;
+    }
+    .content-right{
+        width: 50%;
+        @include dis-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list{
+        @include dis-flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 20px;
+    }
+    iframe{
+        width: 100%;
+    }
+}

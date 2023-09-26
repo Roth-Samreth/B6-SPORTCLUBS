@@ -1,2 +1,104 @@
 @import"../main";
 @import"../component/nav";
+main{
+    height: 80vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    form{
+        background: gray;
+        height: 66vh;
+        width: 30%;
+        padding: 0 20px 0 20px;
+        margin-left: 35px;
+        border-radius: 15px;
+    }
+    h1{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .full-name, .email, .phone{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .phone{
+        margin-bottom: 10px;
+    }
+    .type{
+        display: flex;
+        gap: 10px;
+        padding-left: 33px;
+    }
+    .personal, .partner{
+        gap: 12px;
+    }
+    .dates{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+    }
+    .date, .time{
+        display: flex;
+        flex-direction: column;
+    }
+    .submit{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+    input{
+        height: 4vh;
+        padding-left: 10px;
+        border-radius: 5px;
+        border: none;
+
+    }
+    .date input{
+        width: 200px;
+    }
+    .time input{
+        width: 150px;
+    }
+    button{
+        background: orange;
+        height: 5vh;
+        width: 100px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+}
+footer{
+    height: 250px;
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+.content-left{
+    @include dis-flex;
+    align-items: start;
+    justify-content: space-between;
+    color: white;
+    gap: 40px;
+}
+.content-right{
+    width: 50%;
+    @include dis-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list{
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+}
+iframe{
+    width: 100%;
+}
