@@ -1,0 +1,30 @@
+@import "../component/mixin";
+footer{
+    height: 250px;
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+.content-left{
+    @include dis-flex;
+    align-items: start;
+    justify-content: space-between;
+    color: white;
+    gap: 40px;
+}
+.content-right{
+    width: 50%;
+    @include dis-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list{
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+}
+iframe{
+    width: 100%;
+}

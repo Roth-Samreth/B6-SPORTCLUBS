@@ -22,7 +22,10 @@ header{
     @include dis-flex;
     justify-content: space-around;
 }
-.btn-book{
+button{
     align-self: flex-end;
     padding: 10px;
+    a{
+        text-decoration: none;
+    }
 }

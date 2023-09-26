@@ -1,0 +1,12 @@
+@import"mixin";
+button{
+    background-color: $primary;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    a{
+        color: white;
+    }
+
+}

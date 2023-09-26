@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 nav{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +15,7 @@ nav{
     width:80px;
     
 }
-ul{
+ul.center{
     list-style-type: none;
 }
 ul li{
@@ -23,6 +24,7 @@ ul li{
     
 }
 ul li a{
+    color: black;
     display: block;
     padding: 20px 25px;
     text-decoration: none;

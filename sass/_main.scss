@@ -2,3 +2,11 @@
 @import "./component/varibles";
 @import "./component/mixin";
 @import "./component/card";
+@import "./component/button";
+@import "./component/footer";
+html{
+  scroll-behavior: smooth;
+}
+body {
+    background-color: $bg-color;
+  }

@@ -1,3 +1,78 @@
 @import"../main";
 @import"../component/nav";
 @import "../component/header";
+*{
+    @include universe;
+}
+header{
+    background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+    justify-content: center;
+}
+.some-text{
+    background-color: #fff;
+    @include dis-flex;
+    justify-content: space-between;
+    padding: 30px;
+    .first__text{
+        width: 100%;
+        @include dis-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .question{
+            width: 50%;
+            max-width: 643px;
+            h1{
+                font-size: 60px;
+            }
+        }
+        .__text{
+            width: 50%;
+            max-width: 643px;
+            padding: 10px;
+            p{
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
+
+    }
+    .second__text{
+        width: 100%;
+        @include dis-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .second__text1{
+            width: 50%;
+            max-width: 643px;
+            @include dis-flex;
+            gap: 20px;
+            padding: 10px;
+        }
+    }
+}
+.gym-content{
+    padding: 30px;
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    .box{
+        background-image: url(../../Image/Gymnastic/Cycling.jpg);
+    }
+    .box1{
+        background-image: url(../../Image/Gymnastic/Cable\ Chest\ Press..jpg);
+    }
+    .box2{
+        background-image: url(../../Image/Gymnastic/john-arano-h4i9G-de7Po-unsplash.jpg);
+    }
+    .box3{
+        background-image: url(../../Image/Gymnastic/Cycling.jpg);
+    }
+}

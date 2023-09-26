@@ -1,5 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.card {
+  width: 430px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.card .box, .card .box1, .card .box2, .card .box3, .card .box4,
+.card .box5, .card .box6, .card .box7, .card .box8 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 50%;
+}
+.card .description {
+  width: 100%;
+  height: 50%;
+}
+
+button {
+  background-color: #E1811F;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+button a {
+  color: white;
+}
+
+footer {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.content-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-items: start;
+  justify-content: space-between;
+  color: white;
+  gap: 40px;
+}
+
+.content-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  gap: 20px;
+}
+
+iframe {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #3E4148;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +92,7 @@
 }
 
 nav {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +103,7 @@ nav {
   width: 80px;
 }
 
-ul {
+ul.center {
   list-style-type: none;
 }
 
@@ -27,6 +113,7 @@ ul li {
 }
 
 ul li a {
+  color: black;
   display: block;
   padding: 20px 25px;
   text-decoration: none;
@@ -90,7 +177,106 @@ header {
   justify-content: space-around;
 }
 
-.btn-book {
+button {
   align-self: flex-end;
   padding: 10px;
+}
+button a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  justify-content: center;
+}
+
+.some-text {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.some-text .first__text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.some-text .first__text .question {
+  width: 50%;
+  max-width: 643px;
+}
+.some-text .first__text .question h1 {
+  font-size: 60px;
+}
+.some-text .first__text .__text {
+  width: 50%;
+  max-width: 643px;
+  padding: 10px;
+}
+.some-text .first__text .__text p {
+  font-size: 20px;
+  text-align: justify;
+}
+.some-text .second__text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.some-text .second__text .second__text1 {
+  width: 50%;
+  max-width: 643px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.gym-content {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.card .box {
+  background-image: url(../../Image/Gymnastic/Cycling.jpg);
+}
+.card .box1 {
+  background-image: url(../../Image/Gymnastic/Cable\ Chest\ Press..jpg);
+}
+.card .box2 {
+  background-image: url(../../Image/Gymnastic/john-arano-h4i9G-de7Po-unsplash.jpg);
+}
+.card .box3 {
+  background-image: url(../../Image/Gymnastic/Cycling.jpg);
 }

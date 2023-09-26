@@ -1,0 +1,19 @@
+.card{
+    width: 430px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    .box,.box1,.box2,.box3,.box4,
+    .box5,.box6,.box7,.box8{ 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px 10px 0  0;
+        width: 100%;
+        height: 50%;
+    }
+    .description{
+        width: 100%;
+        height: 50%;
+    }
+}
