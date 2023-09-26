@@ -4,49 +4,81 @@
 * {
   @include universe;
 }
-body{
-  height: 100vh;
+header {
+  height: 70vh;
+  max-height: 700px;
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
 }
-main {
-  @include dis-flex;
-  gap: 30px;
+.head-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  max-width: 700px;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.head-text .text1 {
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  align-self: flex-end;
+  button {
+    padding: 10px;
+  }
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px;
-  .service {
-    @include dis-flex;
-    justify-content: space-between;
-    color: white;
-    .container {
-      width: 100%;
-      @include dis-flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
+  color: white;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-  .image {
-    img {
-      max-width: 100px;
-    }
-  }
-  .box {
-    max-width: 200px;
-    @include dis-flex;
-  }
-  .text {
-    text-align: center;
-  }
-  .mission{
-    @include dis-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    .vision-container,
-    .mission-container{
-      width: 49%;
-      background-color: #fff;
-      text-align: center;
-      padding: 10px;
-    }
-  }
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+.vision-container,
+.mission-container {
+  background-color: #fff;
+  width: 48%;
+}
+.vision-container .text,
+.mission-container .text {
+  text-align: justify;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+footer .list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content-right iframe {
+  width: 100%;
 }
 @import "sass/responsive/home_tablet";

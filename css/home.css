@@ -192,155 +192,117 @@ a button {
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  height: 100vh;
+header {
+  height: 70vh;
+  max-height: 700px;
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding: 30px;
-}
-main .service {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+.head-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  max-width: 700px;
+  height: 100%;
   color: white;
-}
-main .service .container {
-  width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
 }
-main .image img {
-  max-width: 100px;
-}
-main .box {
-  max-width: 200px;
+
+.head-text .text1 {
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-main .text {
+  justify-content: space-around;
   text-align: center;
 }
-main .mission {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
+
+a {
+  text-decoration: none;
+  align-self: flex-end;
 }
-main .mission .vision-container,
-main .mission .mission-container {
-  width: 49%;
-  background-color: #fff;
-  text-align: center;
+a button {
   padding: 10px;
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+
+.vision-container,
+.mission-container {
+  background-color: #fff;
+  width: 48%;
+}
+
+.vision-container .text,
+.mission-container .text {
+  text-align: justify;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+footer .list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content-right iframe {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
   nav {
-    flex-wrap: wrap;
+    font-size: 10px;
   }
-  nav .logo img {
+  .logo img {
     width: 50px;
   }
-  nav ul li a {
-    font-size: 15px;
-  }
-  .service {
-    flex-direction: column;
-  }
-  .service .container-title {
-    padding: 10px;
-    text-align: center;
-  }
   .service .container {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .mission {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px;
-  }
-  .mission .vision-container,
-  .mission .mission-container {
-    width: 49%;
-  }
-  footer {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: auto;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  nav {
     flex-wrap: wrap;
   }
-  nav .logo img {
-    width: 40px;
-  }
-  nav ul li a {
-    font-size: 15px;
-  }
-  .service {
-    width: 100%;
-    padding: 10px;
-    flex-direction: column;
-  }
-  .service .container-title {
-    padding: 10px;
-    text-align: center;
-  }
-  .service .container {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .service .container .card {
-    width: 30%;
-  }
-  .service .container .card .image img {
-    max-width: 50px;
+  .service .container .image img {
+    width: 50px;
   }
   .mission {
-    width: 100%;
-    gap: 10px;
-    padding: 10px;
-    margin: auto;
-    justify-content: center;
+    flex-wrap: wrap;
   }
-  .mission .vision-container,
-  .mission .mission-container {
+  .vision-container,
+  .mission-container {
     width: 100%;
   }
   footer {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: auto;
-    gap: 20px;
-  }
-  footer .content-right {
-    width: 80%;
   }
 }
