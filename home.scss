@@ -4,74 +4,49 @@
 * {
   @include universe;
 }
-.service {
-  max-height: 40vh;
+body{
+  height: 100vh;
+}
+main {
   @include dis-flex;
-  padding: 60px;
-  gap: 10px;
-  color: white;
-}
-.container {
-  width: 100%;
-  height: 200px;
-  @include dis-flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.image {
-  img {
-    max-width: 100px;
-  }
-}
-.box {
-  max-width: 200px;
-  height: 100px;
-  @include dis-flex;
-}
-.text {
-  text-align: center;
-}
-.mission {
-  @include dis-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 60px;
-}
-.v-vision {
-  width: 50%;
-  max-width: 800px;
-  max-height: 300px;
-  @include dis-flex;
-  flex-direction: row;
-  .vision-container {
-    width: 80%;
-    background-color: #fff;
-    border-radius: 10px;
+  gap: 30px;
+  padding: 30px;
+  .service {
     @include dis-flex;
-    gap: 10px;
-    padding: 10px;
-    .text {
-      text-align: justify;
+    justify-content: space-between;
+    color: white;
+    .container {
+      width: 100%;
+      @include dis-flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
-}
 
-.v-mission {
-  width: 50%;
-  max-width: 800px;
-  max-height: 300px;
-  @include dis-flex;
-  flex-direction: row;
-  .mission-container {
-    background-color: #fff;
-    width: 80%;
+  .image {
+    img {
+      max-width: 100px;
+    }
+  }
+  .box {
+    max-width: 200px;
     @include dis-flex;
-    border-radius: 10px;
-    gap: 10px;
-    padding: 10px;
-    .text {
-      text-align: justify;
+  }
+  .text {
+    text-align: center;
+  }
+  .mission{
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    .vision-container,
+    .mission-container{
+      width: 47%;
+      background-color: #fff;
+      text-align: center;
+      padding: 10px;
     }
   }
 }
+@import "sass/responsive/home_tablet";

@@ -1,0 +1,99 @@
+@media (min-width: 767px) and (max-width: 1024px) {
+  nav {
+    flex-wrap: wrap;
+    .logo {
+      img {
+        width: 50px;
+      }
+    }
+    ul {
+      li {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .service {
+    flex-direction: column;
+    .container-title {
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  .mission {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    .vision-container,
+    .mission-container {
+      width: 49%;
+    }
+  }
+  footer {
+    @include dis-flex;
+    justify-content: space-evenly;
+    height: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  nav {
+    flex-wrap: wrap;
+    .logo {
+      img {
+        width: 40px;
+      }
+    }
+    ul {
+      li {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .service {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    .container-title {
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      width: 100%;
+      flex-wrap: wrap;
+      .card {
+        width: 30%;
+        .image {
+            img {
+              max-width: 50px;
+            }
+          }
+      }
+    }
+  }
+  .mission {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    .vision-container,
+    .mission-container {
+      width: 90%;
+    }
+  }
+  footer {
+    @include dis-flex;
+    justify-content: space-evenly;
+    height: auto;
+    gap: 20px;
+    .content-right {
+      width: 80%;
+    }
+  }
+}
