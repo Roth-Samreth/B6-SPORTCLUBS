@@ -205,12 +205,12 @@ header {
   justify-content: space-around;
 }
 
-button {
-  align-self: flex-end;
-  padding: 10px;
-}
-button a {
+a {
   text-decoration: none;
+  align-self: flex-end;
+}
+a button {
+  padding: 10px;
 }
 
 * {

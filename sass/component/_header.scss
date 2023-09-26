@@ -22,10 +22,10 @@ header{
     @include dis-flex;
     justify-content: space-around;
 }
-button{
+a{
+    text-decoration: none;
     align-self: flex-end;
-    padding: 10px;
-    a{
-        text-decoration: none;
-    }
+    button{
+        padding: 10px;
+}
 }
