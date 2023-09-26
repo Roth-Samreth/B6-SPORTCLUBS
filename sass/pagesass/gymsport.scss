@@ -94,4 +94,9 @@ header{
     .description{
         @include dis-flex;
     }
+    .g-btn{
+        @include dis-flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

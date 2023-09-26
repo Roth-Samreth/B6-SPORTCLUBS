@@ -1,0 +1,14 @@
+input {
+    appearance: none;
+    padding: 9px 25px;
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+input::before {
+    content: "Added to favorite";
+    color: white;
+}
+input:checked::before {
+    content: "Favorite";
+    color: white;
+}
