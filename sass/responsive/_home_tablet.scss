@@ -79,12 +79,16 @@
     }
   }
   .mission {
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
     .vision-container,
     .mission-container {
-      width: 90%;
+      width: 80%;
     }
   }
   footer {

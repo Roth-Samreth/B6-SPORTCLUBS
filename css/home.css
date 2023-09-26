@@ -321,13 +321,17 @@ main .mission .mission-container {
     max-width: 50px;
   }
   .mission {
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
   }
   .mission .vision-container,
   .mission .mission-container {
-    width: 90%;
+    width: 80%;
   }
   footer {
     display: flex;
