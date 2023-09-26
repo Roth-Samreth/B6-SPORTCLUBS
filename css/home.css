@@ -22,6 +22,7 @@ a button a {
 }
 
 footer {
+  background: #000;
   height: 250px;
   display: flex;
   justify-content: center;
@@ -285,4 +286,4 @@ a button {
 }
 .v-mission .mission-container .text {
   text-align: justify;
-}/*# sourceMappingURL=home.css.map */
+}

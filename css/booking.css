@@ -22,6 +22,7 @@ a button a {
 }
 
 footer {
+  background: #000;
   height: 250px;
   display: flex;
   justify-content: center;
@@ -320,4 +321,4 @@ footer {
 
 iframe {
   width: 100%;
-}/*# sourceMappingURL=booking.css.map */
+}
