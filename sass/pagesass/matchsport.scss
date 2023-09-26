@@ -1,6 +1,6 @@
 @import"../main";
 @import"../component/nav";
-
+@import"../component/card";
 .cover {
     h1 {
         position: absolute;
@@ -38,5 +38,19 @@
             width: 50%;
             max-width: 643px;
         }
+    }
+}
+.g-btn{
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-content: center;
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    .box {
+        background-image: url(../../Image/Sports/Snooker.jpg);
     }
 }
