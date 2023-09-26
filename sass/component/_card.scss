@@ -15,4 +15,11 @@
     .description{
         height: 50%;
     }
+    .g-btn{
+        @include dis-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-content: center;
+    }
 }

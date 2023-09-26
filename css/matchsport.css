@@ -1,24 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 9px 25px;
-  background-color: cadetblue;
-  border-radius: 5px;
-}
-
-input::after {
-  content: "Favorite";
-  color: white;
-}
-
-input:checked::before {
-  content: "Added to Favorite";
-  color: white;
-}
-
 a {
   text-decoration: none;
 }
@@ -159,6 +140,7 @@ ul li:hover ul.dropdown {
   display: block;
 }
 
+<<<<<<< HEAD
 .card {
   max-width: 320px;
   height: 500px;
@@ -176,6 +158,25 @@ ul li:hover ul.dropdown {
 }
 .card .description {
   height: 50%;
+=======
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 9px 25px;
+  background-color: cadetblue;
+  border-radius: 5px;
+}
+
+input::after {
+  content: "Favorite";
+  color: white;
+}
+
+input:checked::before {
+  content: "Added to Favorite";
+  color: white;
+>>>>>>> 96ffac73302d927428b0af4d7ed1220779db13dd
 }
 
 .cover h1 {
@@ -215,6 +216,7 @@ ul li:hover ul.dropdown {
 .discription .disc-bottom .disc-right, .discription .disc-bottom .disc-left {
   width: 50%;
   max-width: 643px;
+<<<<<<< HEAD
 }
 
 .g-btn {
@@ -235,3 +237,6 @@ ul li:hover ul.dropdown {
 .card .box {
   background-image: url(../../Image/Sports/Snooker.jpg);
 }/*# sourceMappingURL=matchsport.css.map */
+=======
+}
+>>>>>>> 96ffac73302d927428b0af4d7ed1220779db13dd

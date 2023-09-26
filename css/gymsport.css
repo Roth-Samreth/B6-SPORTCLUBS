@@ -1,24 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 9px 25px;
-  background-color: cadetblue;
-  border-radius: 5px;
-}
-
-input::after {
-  content: "Favorite";
-  color: white;
-}
-
-input:checked::before {
-  content: "Added to Favorite";
-  color: white;
-}
-
 a {
   text-decoration: none;
 }
@@ -218,6 +199,35 @@ a button {
 .card .description {
   height: 50%;
 }
+.card .g-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-content: center;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 9px 25px;
+  background-color: cadetblue;
+  border-radius: 5px;
+}
+
+input::after {
+  content: "Favorite";
+  color: white;
+}
+
+input:checked::before {
+  content: "Added to Favorite";
+  color: white;
+}
 
 * {
   padding: 0;
@@ -331,26 +341,12 @@ header {
   background-image: url(../../Image/Gymnastic/Dumbbell\ rows.webp);
 }
 .card .box8 {
-  background-image: url(../../Image/Gymnastic/Cycling.jpg);
+  background-image: url(../../Image/Gymnastic/Iron\ strong\ fitness.webp);
 }
 .card .description {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
-}/*# sourceMappingURL=gymsport.css.map */
-=======
   padding: 0 10px;
 }
-.card .g-btn {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 10px;
-  align-content: center;
-}
->>>>>>> 48b6dab68f237b56b0c8a222501f439cc00aba45
