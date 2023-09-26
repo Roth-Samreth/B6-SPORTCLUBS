@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .card {
-  width: 300px;
+  width: 320px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,10 @@ input:checked::before {
   color: white;
 }
 
-button {
+a {
+  text-decoration: none;
+}
+a button {
   background-color: #E1811F;
   padding: 10px;
   margin: 10px;
@@ -53,7 +56,7 @@ button {
   flex-direction: row;
   align-items: center;
 }
-button a {
+a button a {
   color: white;
 }
 
@@ -278,6 +281,9 @@ header {
   gap: 20px;
   padding: 10px;
 }
+.some-text .second__text .second__text1 p {
+  font-size: 20px;
+}
 
 .gym-content {
   padding: 60px;
@@ -334,5 +340,6 @@ header {
   flex-direction: column;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-content: inherit;
 }
