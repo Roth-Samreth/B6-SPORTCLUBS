@@ -4,11 +4,11 @@ input {
     background-color: cadetblue;
     border-radius: 5px;
 }
-input::before {
-    content: "Added to favorite";
+input::after {
+    content: "Favorite";
     color: white;
 }
 input:checked::before {
-    content: "Favorite";
+    content: "Added to Favorite";
     color: white;
 }
