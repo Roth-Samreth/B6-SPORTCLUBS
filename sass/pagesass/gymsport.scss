@@ -1,6 +1,7 @@
 @import"../main";
 @import"../component/nav";
 @import "../component/header";
+@import "../component/card";
 *{
     @include universe;
 }
@@ -50,6 +51,9 @@ header{
             @include dis-flex;
             gap: 20px;
             padding: 10px;
+            p{
+                font-size: 20px;
+            }
         }
     }
 }
@@ -93,5 +97,13 @@ header{
     }
     .description{
         @include dis-flex;
+        padding: 0 10px;
+    }
+    .g-btn{
+        @include dis-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-content: center;
     }
 }
