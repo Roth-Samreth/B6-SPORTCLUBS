@@ -147,90 +147,69 @@ main {
   width: 100%;
   color: white;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  flex-direction: row;
 }
-main form {
+main .vdo {
+  width: 50%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  width: 30%;
-  max-width: 650px;
-  padding: 20px;
-  margin-left: 35px;
-  border-radius: 15px;
 }
-main h1 {
+main .vdo video {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+main .form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+main .form form {
+  width: 60%;
+  border-radius: 15px;
+  padding: 10px;
+}
+main .form h1 {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .full-name, main .email, main .phone, main .feedback {
+main .form .full-name, main .form .email, main .form .phone, main .form .feedback {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
-main .submit {
+main .form .submit {
   margin-top: 20px;
   display: flex;
   justify-content: flex-end;
 }
-main input {
+main .form input {
   padding-left: 10px;
   border: none;
 }
-main .full-name input, main .email input, main .phone input {
+main .form .full-name input, main .form .email input, main .form .phone input {
   height: 4vh;
   border-radius: 6px;
 }
-main .feedback input {
+main .form .feedback input {
   height: 10vh;
   border-radius: 6px;
 }
-main button {
+main .form button {
   background: orange;
   color: white;
   height: 5vh;
   width: 100px;
   border-radius: 10px;
   border: none;
-}
-main footer {
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 30px;
-}
-main .content-left {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  align-items: start;
-  justify-content: space-between;
-  color: white;
-  gap: 40px;
-}
-main .content-right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-}
-main .list {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  justify-content: start;
-  gap: 20px;
-}
-main iframe {
-  width: 100%;
 }

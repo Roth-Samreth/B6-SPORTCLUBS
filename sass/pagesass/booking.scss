@@ -1,13 +1,14 @@
 @import"../main";
 @import"../component/nav";
+@import "../component/video";
 main{
+    background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
     height: 80vh;
     width: 100%;
     color: white;
     display: flex;
     align-items: center;
     form{
-        background: gray;
         height: 66vh;
         width: 30%;
         padding: 0 20px 0 20px;
