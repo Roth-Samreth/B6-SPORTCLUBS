@@ -1,24 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 9px 25px;
-  background-color: cadetblue;
-  border-radius: 5px;
-}
-
-input::after {
-  content: "Favorite";
-  color: white;
-}
-
-input:checked::before {
-  content: "Added to Favorite";
-  color: white;
-}
-
 a {
   text-decoration: none;
 }
@@ -157,6 +138,25 @@ ul li a:hover {
 ul li:hover ul.dropdown {
   transition: 0.5s ease;
   display: block;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 9px 25px;
+  background-color: cadetblue;
+  border-radius: 5px;
+}
+
+input::after {
+  content: "Favorite";
+  color: white;
+}
+
+input:checked::before {
+  content: "Added to Favorite";
+  color: white;
 }
 
 .cover h1 {
