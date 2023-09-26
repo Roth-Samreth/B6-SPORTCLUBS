@@ -140,7 +140,6 @@ ul li:hover ul.dropdown {
   display: block;
 }
 
-<<<<<<< HEAD
 .card {
   max-width: 320px;
   height: 500px;
@@ -158,7 +157,18 @@ ul li:hover ul.dropdown {
 }
 .card .description {
   height: 50%;
-=======
+}
+.card .g-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-content: center;
+}
+
 input {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -176,7 +186,6 @@ input::after {
 input:checked::before {
   content: "Added to Favorite";
   color: white;
->>>>>>> 96ffac73302d927428b0af4d7ed1220779db13dd
 }
 
 .cover h1 {
@@ -216,18 +225,10 @@ input:checked::before {
 .discription .disc-bottom .disc-right, .discription .disc-bottom .disc-left {
   width: 50%;
   max-width: 643px;
-<<<<<<< HEAD
 }
 
-.g-btn {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 10px;
-  align-content: center;
+.sports {
+  padding: 60px;
 }
 
 .card {
@@ -236,7 +237,11 @@ input:checked::before {
 }
 .card .box {
   background-image: url(../../Image/Sports/Snooker.jpg);
-}/*# sourceMappingURL=matchsport.css.map */
-=======
 }
->>>>>>> 96ffac73302d927428b0af4d7ed1220779db13dd
+.card .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}/*# sourceMappingURL=matchsport.css.map */
