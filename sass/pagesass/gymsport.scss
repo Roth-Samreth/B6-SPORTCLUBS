@@ -12,6 +12,7 @@ header{
     background-color: #fff;
     @include dis-flex;
     justify-content: space-between;
+    min-height: 500px;
     padding: 30px;
     .first__text{
         width: 100%;
@@ -73,6 +74,21 @@ header{
         background-image: url(../../Image/Gymnastic/john-arano-h4i9G-de7Po-unsplash.jpg);
     }
     .box3{
+        background-image: url(../../Image/Gymnastic/Bar\ Press.jpg);
+    }
+    .box4{
+        background-image: url(../../Image/Gymnastic/Gym02.jpg);
+    }
+    .box5{
+        background-image: url(../../Image/Gymnastic/yoga.jpg);
+    }
+    .box6{
+        background-image: url(../../Image/Gymnastic/Dumbbell\ Chest\ Press..jpg);
+    }
+    .box7{
+        background-image: url(../../Image/Gymnastic/Dumbbell\ rows.webp);
+    }
+    .box8{
         background-image: url(../../Image/Gymnastic/Cycling.jpg);
     }
 }

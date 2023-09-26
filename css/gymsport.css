@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .card {
-  width: 430px;
+  width: 400px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -203,6 +203,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  min-height: 500px;
   padding: 30px;
 }
 .some-text .first__text {
@@ -278,5 +279,20 @@ header {
   background-image: url(../../Image/Gymnastic/john-arano-h4i9G-de7Po-unsplash.jpg);
 }
 .card .box3 {
+  background-image: url(../../Image/Gymnastic/Bar\ Press.jpg);
+}
+.card .box4 {
+  background-image: url(../../Image/Gymnastic/Gym02.jpg);
+}
+.card .box5 {
+  background-image: url(../../Image/Gymnastic/yoga.jpg);
+}
+.card .box6 {
+  background-image: url(../../Image/Gymnastic/Dumbbell\ Chest\ Press..jpg);
+}
+.card .box7 {
+  background-image: url(../../Image/Gymnastic/Dumbbell\ rows.webp);
+}
+.card .box8 {
   background-image: url(../../Image/Gymnastic/Cycling.jpg);
 }
