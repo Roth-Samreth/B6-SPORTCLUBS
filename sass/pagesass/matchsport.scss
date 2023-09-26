@@ -1,2 +1,42 @@
 @import"../main";
 @import"../component/nav";
+
+.cover {
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        color: white;
+    }
+}
+
+.discription {
+    color: white;
+    padding: 60px;
+    .disc-top {
+        display: flex;
+        padding: 25px;
+
+        h1 {
+            width: 400px;
+            text-align: center;
+        }
+
+        p {
+            width: 550px;
+            flex-shrink: 0;
+        }
+    }
+    .disc-bottom {
+        width: 100%;
+        @include dis-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .disc-right,.disc-left{
+            width: 50%;
+            max-width: 643px;
+        }
+    }
+}

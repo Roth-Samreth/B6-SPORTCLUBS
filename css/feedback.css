@@ -77,6 +77,12 @@ iframe {
   width: 100%;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -142,4 +148,4 @@ ul li a:hover {
 ul li:hover ul.dropdown {
   transition: 0.5s ease;
   display: block;
-}
+}/*# sourceMappingURL=feedback.css.map */

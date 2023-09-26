@@ -4,6 +4,9 @@
 @import "./component/card";
 @import "./component/button";
 @import "./component/footer";
+*{
+  @include universe;
+}
 html{
   scroll-behavior: smooth;
 }
