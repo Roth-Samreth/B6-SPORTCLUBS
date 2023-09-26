@@ -1,11 +1,7 @@
 @import"../main";
 @import"../component/nav";
-<<<<<<< HEAD
-@import"../component/card";
-=======
 @import "../component/favorite";
-
->>>>>>> 96ffac73302d927428b0af4d7ed1220779db13dd
+@import "../component/card";
 .cover {
     h1 {
         position: absolute;
