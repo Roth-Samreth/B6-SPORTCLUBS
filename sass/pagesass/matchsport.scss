@@ -1,7 +1,8 @@
 @import"../main";
 @import"../component/nav";
-@import "../component/favorite";
 @import "../component/card";
+@import "../component/favorite";
+
 .cover {
     h1 {
         position: absolute;
@@ -41,12 +42,8 @@
         }
     }
 }
-.g-btn{
-    @include dis-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 10px;
-    align-content: center;
+.sports{
+    padding: 60px;
 }
 .card{
     background-color: #fff;
@@ -54,4 +51,8 @@
     .box {
         background-image: url(../../Image/Sports/Snooker.jpg);
     }
+    .description {
+        @include dis-flex;
+        padding: 0 10px;
+    } 
 }
