@@ -204,7 +204,7 @@ header {
   align-items: center;
   justify-content: space-between;
   min-height: 500px;
-  padding: 30px;
+  padding: 60px;
 }
 .some-text .first__text {
   width: 100%;
@@ -254,7 +254,7 @@ header {
 }
 
 .gym-content {
-  padding: 30px;
+  padding: 60px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -295,4 +295,10 @@ header {
 }
 .card .box8 {
   background-image: url(../../Image/Gymnastic/Cycling.jpg);
+}
+.card .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

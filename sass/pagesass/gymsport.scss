@@ -13,7 +13,7 @@ header{
     @include dis-flex;
     justify-content: space-between;
     min-height: 500px;
-    padding: 30px;
+    padding: 60px;
     .first__text{
         width: 100%;
         @include dis-flex;
@@ -54,7 +54,7 @@ header{
     }
 }
 .gym-content{
-    padding: 30px;
+    padding: 60px;
     @include dis-flex;
     flex-direction: row;
     justify-content: space-between;
@@ -90,5 +90,8 @@ header{
     }
     .box8{
         background-image: url(../../Image/Gymnastic/Cycling.jpg);
+    }
+    .description{
+        @include dis-flex;
     }
 }
