@@ -69,12 +69,12 @@
   .full-name input,
   .email input,
   .phone input,
-  .password input {
-    height: 7vh;
+  .password input{
+    padding: 10px;
     border-radius: 6px;
   }
   .feedback input {
-    height: 10vh;
+    padding: 25px;
     border-radius: 6px;
   }
   button {

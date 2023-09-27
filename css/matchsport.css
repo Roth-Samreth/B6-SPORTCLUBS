@@ -341,6 +341,16 @@ a button {
   padding: 10px;
 }
 
+@media (max-width: 1024px) {
+  header {
+    height: 65vh;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: 50vh;
+  }
+}
 header {
   background-image: url("https://idme-marketplace.s3.amazonaws.com/3lbkb1gop83ofb3112kt7z9xvw81");
   justify-content: center;

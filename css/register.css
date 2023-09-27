@@ -212,3 +212,174 @@ ul li:hover ul.dropdown {
     font-size: 14px;
   }
 }
+.vdo {
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.vdo video {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.form form {
+  background: rgba(0, 0, 0, 0.7);
+  width: 90%;
+  border-radius: 15px;
+  padding: 20px;
+}
+.form h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .full-name,
+.form .email,
+.form .phone,
+.form .feedback, .form .password,
+.form .forgot-pw, .form .log, .form .social {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.form .submit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.form input {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+}
+.form input:focus {
+  outline: none;
+}
+.form input:invalid {
+  animation: invalid 0.3s 2;
+  border: 5px solid #e70707;
+}
+.form input:invalid input:focus {
+  outline: none;
+}
+@keyframes invalid {
+  25% {
+    translate: 6px 0;
+  }
+  50% {
+    translate: -6px 0;
+  }
+  75% {
+    translate: 6px 0;
+  }
+}
+.form .full-name input,
+.form .email input,
+.form .phone input,
+.form .password input {
+  padding: 10px;
+  border-radius: 6px;
+}
+.form .feedback input {
+  padding: 25px;
+  border-radius: 6px;
+}
+.form button {
+  background: orange;
+  color: white;
+  height: 5vh;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+}
+
+.dates {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+  }
+  .form form {
+    width: 80%;
+  }
+  .form form .tittle h1 {
+    font-size: 20px;
+  }
+}
+nav {
+  z-index: 11;
+}
+
+main {
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form div {
+  color: white;
+}
+
+.forgot-pw a {
+  border: none;
+  align-self: flex-end;
+}
+
+.log {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.social {
+  text-align: center;
+  gap: 20px;
+}
+.social .logo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social .logo img {
+  width: 50px;
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form {
+  z-index: 1;
+}
+
+footer {
+  z-index: 111;
+}

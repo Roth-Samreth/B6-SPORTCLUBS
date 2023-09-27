@@ -253,6 +253,16 @@ a button {
   padding: 10px;
 }
 
+@media (max-width: 1024px) {
+  header {
+    height: 65vh;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: 50vh;
+  }
+}
 * {
   padding: 0;
   margin: 0;

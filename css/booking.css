@@ -289,11 +289,11 @@ ul li:hover ul.dropdown {
 .form .email input,
 .form .phone input,
 .form .password input {
-  height: 7vh;
+  padding: 10px;
   border-radius: 6px;
 }
 .form .feedback input {
-  height: 10vh;
+  padding: 25px;
   border-radius: 6px;
 }
 .form button {
@@ -365,7 +365,6 @@ main {
 }
 
 input {
-  height: 4vh;
   padding-left: 10px;
   border-radius: 5px;
   border: none;
