@@ -2,19 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 a {
   text-decoration: none;
-  border-radius: 5px;
-  background: linear-gradient(to right, #E1811F 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all 0.5s ease-out;
-  border: 2px solid white;
 }
 a button {
-  background-color: transparent;
+  background-color: #E1811F;
   padding: 10px;
+  margin: 10px;
   border-radius: 5px;
-  border: 2px solid black;
-  transition: all 0.2s ease;
   border: none;
   color: white;
   display: flex;
@@ -26,22 +19,6 @@ a button {
 }
 a button a {
   color: white;
-}
-a button:active {
-  transform: scale(0.8);
-}
-
-a:hover {
-  background-position: left bottom;
-  color: white;
-  border: none;
-}
-a:hover button {
-  color: white;
-}
-
-a:active {
-  transform: scale(0.8);
 }
 
 footer {
@@ -91,28 +68,6 @@ iframe {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
-  }
-  footer .content-right {
-    width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
-  }
-  footer .content-right {
-    width: 100%;
-  }
-}
 * {
   padding: 0;
   margin: 0;
@@ -134,7 +89,7 @@ body {
 }
 
 nav {
-  background: #3E4148;
+  background: transparent;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   display: flex;
@@ -167,7 +122,6 @@ ul li a {
   font-size: 20px;
   display: flex;
   align-items: center;
-  border: none;
 }
 
 ul li ul.dropdown li {
@@ -184,7 +138,7 @@ ul li ul.dropdown {
 
 ul li a:hover {
   background-color: #ccc;
-  color: white;
+  color: #000;
 }
 
 ul li:hover ul.dropdown {
@@ -192,26 +146,6 @@ ul li:hover ul.dropdown {
   display: block;
 }
 
-@media (max-width: 1024px) {
-  nav {
-    display: flex;
-    gap: 10px;
-  }
-  nav ul li a {
-    padding: 10px;
-    font-size: 20px;
-  }
-}
-@media (max-width: 600px) {
-  nav {
-    display: flex;
-    gap: 10px;
-  }
-  nav ul li a {
-    padding-right: 5px;
-    font-size: 14px;
-  }
-}
 header {
   height: 70vh;
   max-height: 700px;
@@ -259,10 +193,6 @@ a button {
   font-family: "Poppins", sans-serif;
 }
 
-.book-btn button {
-  color: white;
-}
-
 .service {
   display: flex;
   flex-direction: column;
@@ -296,7 +226,6 @@ a button {
 
 .mission {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
   padding: 30px;
@@ -320,8 +249,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 30px;
 }
@@ -382,5 +310,14 @@ footer .list {
   .vision-container,
   .mission-container {
     width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+  footer .content-right {
+    width: 90%;
   }
 }

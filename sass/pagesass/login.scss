@@ -1,2 +1,44 @@
 @import"../main";
 @import"../component/nav";
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        background: paleturquoise;
+        height: 60vh;
+        width: 30%;
+        .input input{
+            width: 90%;
+            height: 5vh;
+            margin-top: 20px;
+            padding: 0 10px;
+            border: none;
+            border-bottom: 2px solid black;
+            background: none;
+        }
+        input:focus {
+            outline: none;
+            border-bottom: 2px solid orange;
+            padding: 0 10px;
+        }
+        .forgot-pw, .log-in, button, p, .logo{
+            margin-top: 15px;
+        }
+        button{
+            background: orange;
+            height: 4vh;
+            width: 70%;
+            border-radius: 90px;
+            border: none;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}
