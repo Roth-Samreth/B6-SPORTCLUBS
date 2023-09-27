@@ -23,10 +23,13 @@
             <li>
                 <a href="#">FeedBack<i class="material-icons">headset_mic</i></a>
             </li>
-        </ul>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li>
+                <a href="#">Account</a>
+                <ul class="dropdown">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <main>
@@ -43,7 +46,7 @@
                 </div>
                 <div class="full-name">
                     <label for="name">Your Full Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" pattern="[A-Z]*">
                 </div>
                 <div class="email">
                     <label for="email">Email</label>

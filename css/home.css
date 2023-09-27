@@ -192,102 +192,125 @@ a button {
   font-family: "Poppins", sans-serif;
 }
 
-.service {
-  max-height: 40vh;
+header {
+  height: 70vh;
+  max-height: 700px;
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.head-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  max-width: 700px;
+  height: 100%;
+  color: white;
   display: flex;
   justify-content: center;
+}
+
+.head-text .text1 {
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px;
-  gap: 10px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  align-self: flex-end;
+}
+a button {
+  padding: 10px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
   color: white;
 }
 
 .container {
-  width: 100%;
-  height: 200px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.image img {
-  max-width: 100px;
-}
-
-.box {
-  max-width: 200px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.text {
-  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .mission {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+
+.vision-container,
+.mission-container {
+  background-color: #fff;
+  width: 48%;
+}
+
+.vision-container .text,
+.mission-container .text {
+  text-align: justify;
+}
+
+footer {
+  display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 60px;
+  align-items: center;
+  padding: 30px;
 }
 
-.v-vision {
-  width: 50%;
-  max-width: 800px;
-  max-height: 300px;
+footer .list {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-}
-.v-vision .vision-container {
-  width: 80%;
-  background-color: #fff;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 10px;
-}
-.v-vision .vision-container .text {
-  text-align: justify;
 }
 
-.v-mission {
-  width: 50%;
-  max-width: 800px;
-  max-height: 300px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
+.content-right iframe {
+  width: 100%;
 }
-.v-mission .mission-container {
-  background-color: #fff;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  gap: 10px;
-  padding: 10px;
-}
-.v-mission .mission-container .text {
-  text-align: justify;
+
+@media (max-width: 600px) {
+  nav {
+    font-size: 10px;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .service .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service .container .box {
+    width: 95px;
+  }
+  .service .container .image img {
+    width: 80px;
+  }
+  .mission {
+    flex-wrap: wrap;
+  }
+  .vision-container,
+  .mission-container {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+  footer .content-right {
+    width: 90%;
+  }
 }
