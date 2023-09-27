@@ -264,7 +264,8 @@ ul li:hover ul.dropdown {
   border: none;
   outline: none;
 }
-.form input:focus {
+.form input:focus,
+.form textarea:focus {
   outline: none;
 }
 .form input:invalid {
