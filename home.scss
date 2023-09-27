@@ -4,6 +4,11 @@
 * {
   @include universe;
 }
+.book-btn{
+  button{
+    color: white;
+  }
+}
 .service {
   display: flex;
   flex-direction: column;

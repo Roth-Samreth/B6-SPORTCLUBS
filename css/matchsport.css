@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 a {
   text-decoration: none;
+  border-radius: 5px;
   background: linear-gradient(to right, #E1811F 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
@@ -12,7 +13,7 @@ a button {
   background-color: transparent;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid white;
+  border: 2px solid black;
   transition: all 0.2s ease;
   border: none;
   color: white;
@@ -32,6 +33,11 @@ a button:active {
 
 a:hover {
   background-position: left bottom;
+  color: white;
+  border: none;
+}
+a:hover button {
+  color: white;
 }
 
 a:active {
@@ -106,7 +112,7 @@ body {
 }
 
 nav {
-  background: transparent;
+  background: #3E4148;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   display: flex;
@@ -156,7 +162,7 @@ ul li ul.dropdown {
 
 ul li a:hover {
   background-color: #ccc;
-  color: #000;
+  color: white;
 }
 
 ul li:hover ul.dropdown {
@@ -189,8 +195,49 @@ ul li:hover ul.dropdown {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 10px;
   align-content: center;
+}
+.card a {
+  text-decoration: none;
+  background: linear-gradient(to right, #E1811F 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.card a button {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: all 0.2s ease;
+  border: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+}
+.card a button a {
+  color: white;
+}
+.card a button:active {
+  transform: scale(0.8);
+}
+.card a:hover {
+  background-position: left bottom;
+  color: white;
+  border: 2px solid white;
+}
+.card a:hover button {
+  color: white;
+}
+.card a:active {
+  transform: scale(0.8);
 }
 
 input {
@@ -380,4 +427,79 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .some-text {
+    padding: 30px;
+  }
+  .some-text .first__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .some-text .first__text .question,
+  .some-text .first__text .__text {
+    width: 100%;
+  }
+  .some-text .first__text .question h1,
+  .some-text .first__text .__text h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .gym-content {
+    display: flex;
+    padding: 30px;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .gym-content .card {
+    width: 49%;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+  footer .content-right {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .discription {
+    padding: 30px;
+  }
+  .discription .first__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .discription .first__text .question,
+  .discription .first__text .__text {
+    width: 100%;
+  }
+  .discription .first__text .question h1,
+  .discription .first__text .__text h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .sports {
+    width: 100%;
+    display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .sports .card {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+  footer .content-right {
+    width: 100%;
+  }
 }
