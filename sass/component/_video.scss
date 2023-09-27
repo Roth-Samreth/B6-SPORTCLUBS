@@ -1,75 +1,102 @@
 @import "../component/mixin";
-.vdo{
-    width: 50%;
+.vdo {
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  video {
+    object-fit: fill;
+    width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7);
-    video{
-        object-fit: fill;
-        width: 100%;
-        height: 100%;
-    }
+  }
 }
-.form{
-    @include dis-flex;
-    width: 50%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    form{
-        background: rgba(0,0,0,0.7);
-        width: 60%;
-        border-radius: 15px;
-        padding: 10px;
+.form {
+  @include dis-flex;
+  width: 50%;
+  height: 100%;
+  form {
+    background: rgba(0, 0, 0, 0.7);
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .full-name,
+  .email,
+  .phone,
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .submit {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  input {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+  }
+  input:focus{
+    outline: none;
+  }
+  input:invalid {
+    animation: invalid 0.3s 2;
+    border: 5px solid #e70707;
+    input:focus{
+      outline: none;
     }
-    h1{
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    @keyframes invalid {
+      25% {
+        translate: 6px 0;
+      }
+      50% {
+        translate: -6px 0;
+      }
+      75% {
+        translate: 6px 0;
+      }
     }
-    .full-name, .email, .phone, .feedback{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    .submit{
-        margin-top: 20px;
-        display: flex;
-        justify-content: flex-end;
-    }
-    input{
-        padding-left: 10px;
-        padding-right: 10px;
-        border: none;
-    }
-    input:invalid {
-        animation: invalid 0.3s 2;
-        border: 2px solid #e70707;
-        @keyframes invalid {
-            25% {
-                translate: 6px 0;
-            }
-            50% {
-                translate: -6px 0;
-            }
-            75% {
-                translate: 6px 0;
-            }
+  }
+  .full-name input,
+  .email input,
+  .phone input {
+    height: 7vh;
+    border-radius: 6px;
+  }
+  .feedback input {
+    height: 10vh;
+    border-radius: 6px;
+  }
+  button {
+    background: orange;
+    color: white;
+    height: 5vh;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+  }
+}
+.dates {
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    form {
+        width: 80%;
+      .tittle {
+        h1 {
+          font-size: 20px;
         }
+      }
     }
-    .full-name input, .email input, .phone input{
-        height: 7vh;
-        border-radius: 6px;
-    }
-    .feedback input{
-        height: 10vh;
-        border-radius: 6px;
-    }
-    button{
-        background: orange;
-        color: white;
-        height: 5vh;
-        width: 100px;
-        border-radius: 10px;
-        border: none;
-    }
+  }
 }
