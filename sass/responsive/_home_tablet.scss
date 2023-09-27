@@ -1,7 +1,4 @@
 @media (max-width: 1024px) {
-  nav {
-    font-size: 10px;
-  }
   .logo img {
     width: 50px;
   }
@@ -24,15 +21,6 @@
   .vision-container,
   .mission-container {
     width: 100%;
-  }
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
-    .content-right {
-      width: 90%;
-    }
   }
 }
 @media (max-width: 600px) {
@@ -61,14 +49,5 @@
   .vision-container,
   .mission-container {
     width: 100%;
-  }
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
-    .content-right {
-      width: 90%;
-    }
   }
 }

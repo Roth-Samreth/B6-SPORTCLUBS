@@ -1,38 +1,38 @@
 @media (max-width: 1024px) {
-    .some-text {
-        padding: 30px;
-        .first__text {
-          display: flex;
-          flex-direction: column;
-          .question,
-          .__text {
-            width: 100%;
-            h1 {
-              font-size: 30px;
-              text-align: center;
-            }
-          }
+  .some-text {
+    padding: 30px;
+    .first__text {
+      display: flex;
+      flex-direction: column;
+      .question,
+      .__text {
+        width: 100%;
+        h1 {
+          font-size: 30px;
+          text-align: center;
         }
       }
-      .gym-content {
-        display: flex;
-        padding: 30px;
-        margin: 0;
-        flex-wrap: wrap;
-        align-items: center;
-        .card {
-          width: 49%;
-        }
-      }
-      footer{
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        gap: 10px;
-        .content-right{
-            width: 100%;
-        }
-      }
+    }
+  }
+  .gym-content {
+    display: flex;
+    padding: 30px;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    .card {
+      width: 49%;
+    }
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+    .content-right {
+      width: 100%;
+    }
+  }
 }
 @media (max-width: 600px) {
   .some-text {
@@ -58,15 +58,6 @@
     align-items: center;
     .card {
       width: 100%;
-    }
-  }
-  footer{
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
-    .content-right{
-        width: 100%;
     }
   }
 }

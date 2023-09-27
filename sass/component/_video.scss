@@ -12,10 +12,10 @@
 .form{
     @include dis-flex;
     width: 50%;
-    // max-width: 650px;
     height: 100%;
     background: rgba(0,0,0,0.7);
     form{
+        background: rgba(0,0,0,0.7);
         width: 60%;
         border-radius: 15px;
         padding: 10px;

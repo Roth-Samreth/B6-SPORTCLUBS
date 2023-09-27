@@ -29,3 +29,25 @@ footer{
 iframe{
     width: 100%;
 }
+@media (max-width: 1024px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+        .content-right{
+            width: 100%;
+        }
+      }
+}
+@media (max-width: 600px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+        .content-right{
+            width: 100%;
+        }
+      }
+}

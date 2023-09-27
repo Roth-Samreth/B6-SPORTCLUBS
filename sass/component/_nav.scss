@@ -55,3 +55,33 @@ ul li:hover ul.dropdown{
     transition: 0.5s ease;
     display: block;
 }
+@media (max-width: 1024px){
+    nav {
+        display: flex;
+        gap: 10px;
+        ul{
+    
+          li{
+            a{
+              padding: 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+}
+@media (max-width: 600px){
+    nav {
+        display: flex;
+        gap: 10px;
+        ul{
+    
+          li{
+            a{
+              padding: 10px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+}
