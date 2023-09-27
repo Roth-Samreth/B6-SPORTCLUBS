@@ -2,12 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 a {
   text-decoration: none;
+  background: linear-gradient(to right, #E1811F 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: 2px solid white;
 }
 a button {
-  background-color: #E1811F;
+  background-color: transparent;
   padding: 10px;
-  margin: 10px;
   border-radius: 5px;
+  border: 2px solid white;
+  transition: all 0.2s ease;
   border: none;
   color: white;
   display: flex;
@@ -19,6 +25,17 @@ a button {
 }
 a button a {
   color: white;
+}
+a button:active {
+  transform: scale(0.8);
+}
+
+a:hover {
+  background-position: left bottom;
+}
+
+a:active {
+  transform: scale(0.8);
 }
 
 footer {
@@ -122,6 +139,7 @@ ul li a {
   font-size: 20px;
   display: flex;
   align-items: center;
+  border: none;
 }
 
 ul li ul.dropdown li {

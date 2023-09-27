@@ -2,12 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 a {
   text-decoration: none;
+  background: linear-gradient(to right, #E1811F 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: 2px solid white;
 }
 a button {
-  background-color: #E1811F;
+  background-color: transparent;
   padding: 10px;
-  margin: 10px;
   border-radius: 5px;
+  border: 2px solid white;
+  transition: all 0.2s ease;
   border: none;
   color: white;
   display: flex;
@@ -19,6 +25,17 @@ a button {
 }
 a button a {
   color: white;
+}
+a button:active {
+  transform: scale(0.8);
+}
+
+a:hover {
+  background-position: left bottom;
+}
+
+a:active {
+  transform: scale(0.8);
 }
 
 footer {
@@ -122,6 +139,7 @@ ul li a {
   font-size: 20px;
   display: flex;
   align-items: center;
+  border: none;
 }
 
 ul li ul.dropdown li {
@@ -226,6 +244,7 @@ a button {
 
 .mission {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
   padding: 30px;
@@ -249,7 +268,8 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 30px;
 }
@@ -261,10 +281,6 @@ footer .list {
   align-items: center;
   flex-direction: row;
   gap: 10px;
-}
-
-.content-right iframe {
-  width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -285,6 +301,7 @@ footer .list {
     width: 80px;
   }
   .mission {
+    justify-content: none;
     flex-wrap: wrap;
   }
   .vision-container,
@@ -319,6 +336,7 @@ footer .list {
     width: 80px;
   }
   .mission {
+    justify-content: none;
     flex-wrap: wrap;
   }
   .vision-container,

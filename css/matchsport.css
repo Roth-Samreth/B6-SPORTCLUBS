@@ -2,12 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 a {
   text-decoration: none;
+  background: linear-gradient(to right, #E1811F 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: 2px solid white;
 }
 a button {
-  background-color: #E1811F;
+  background-color: transparent;
   padding: 10px;
-  margin: 10px;
   border-radius: 5px;
+  border: 2px solid white;
+  transition: all 0.2s ease;
   border: none;
   color: white;
   display: flex;
@@ -19,6 +25,17 @@ a button {
 }
 a button a {
   color: white;
+}
+a button:active {
+  transform: scale(0.8);
+}
+
+a:hover {
+  background-position: left bottom;
+}
+
+a:active {
+  transform: scale(0.8);
 }
 
 footer {
@@ -122,6 +139,7 @@ ul li a {
   font-size: 20px;
   display: flex;
   align-items: center;
+  border: none;
 }
 
 ul li ul.dropdown li {
@@ -255,28 +273,15 @@ header {
 
 .discription {
   background-color: #fff;
-  padding: 60px;
-  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  min-height: 500px;
+  padding: 60px;
 }
-.discription .disc-top {
-  display: flex;
-  padding: 25px;
-}
-.discription .disc-top h1 {
-  width: 400px;
-  text-align: center;
-}
-.discription .disc-top p {
-  font-size: 20px;
-  width: 550px;
-  flex-shrink: 0;
-}
-.discription .disc-bottom {
+.discription .first__text {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -284,12 +289,46 @@ header {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
-.discription .disc-bottom .disc-right, .discription .disc-bottom .disc-left {
+.discription .first__text .question {
   width: 50%;
-  max-width: 633px;
-  padding: 30px;
+  max-width: 643px;
+}
+.discription .first__text .question h1 {
+  font-size: 60px;
+}
+.discription .first__text .__text {
+  width: 50%;
+  max-width: 643px;
+  padding: 10px;
+}
+.discription .first__text .__text p {
+  font-size: 20px;
   text-align: justify;
+}
+.discription .second__text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.discription .second__text .second__text1 {
+  width: 50%;
+  max-width: 643px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.discription .second__text .second__text1 p {
+  font-size: 20px;
 }
 
 .sports {
