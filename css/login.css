@@ -2,12 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 a {
   text-decoration: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #E1811F 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: 2px solid white;
 }
 a button {
-  background-color: #E1811F;
+  background-color: transparent;
   padding: 10px;
-  margin: 10px;
   border-radius: 5px;
+  border: 2px solid black;
+  transition: all 0.2s ease;
   border: none;
   color: white;
   display: flex;
@@ -20,23 +27,57 @@ a button {
 a button a {
   color: white;
 }
+a button:active {
+  transform: scale(0.8);
+}
+
+a:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+}
+a:hover button {
+  color: white;
+}
+
+a:active {
+  transform: scale(0.8);
+}
 
 footer {
   background: #000;
   height: 250px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
 }
-main .google button {
-  background-color: white;
-}
-main .forgot-pw {
+
+.content-left {
   display: flex;
   justify-content: center;
-  color: blue;
+  flex-direction: column;
+  align-items: center;
+  align-items: start;
+  justify-content: space-between;
+  color: white;
+  gap: 40px;
 }
-main p {
+
+.content-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -50,6 +91,28 @@ iframe {
   width: 100%;
 }
 
+@media (max-width: 1024px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+  footer .content-right {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+  footer .content-right {
+    width: 100%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -71,7 +134,7 @@ body {
 }
 
 nav {
-  background: transparent;
+  background: #3E4148;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   display: flex;
@@ -104,6 +167,7 @@ ul li a {
   font-size: 20px;
   display: flex;
   align-items: center;
+  border: none;
 }
 
 ul li ul.dropdown li {
@@ -120,10 +184,73 @@ ul li ul.dropdown {
 
 ul li a:hover {
   background-color: #ccc;
-  color: #000;
+  color: white;
 }
 
 ul li:hover ul.dropdown {
   transition: 0.5s ease;
   display: block;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    display: flex;
+    gap: 10px;
+  }
+  nav ul li a {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    gap: 10px;
+  }
+  nav ul li a {
+    padding-right: 5px;
+    font-size: 14px;
+  }
+}
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main form {
+  background: paleturquoise;
+  height: 60vh;
+  width: 30%;
+}
+main form .input input {
+  width: 90%;
+  height: 5vh;
+  margin-top: 20px;
+  padding: 0 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: none;
+}
+main form input:focus {
+  outline: none;
+  border-bottom: 2px solid orange;
+  padding: 0 10px;
+}
+main form .forgot-pw, main form .log-in, main form button, main form p, main form .logo {
+  margin-top: 15px;
+}
+main form button {
+  background: orange;
+  height: 4vh;
+  width: 70%;
+  border-radius: 90px;
+  border: none;
+}
+main form .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
