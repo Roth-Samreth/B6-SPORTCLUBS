@@ -526,22 +526,14 @@ header {
     text-align: center;
   }
   .sports {
-    width: 100%;
     display: flex;
+    padding: 0;
     margin: 30px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: none;
     align-items: center;
   }
   .sports .card {
-    width: 100%;
-  }
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
-  }
-  footer .content-right {
     width: 100%;
   }
 }

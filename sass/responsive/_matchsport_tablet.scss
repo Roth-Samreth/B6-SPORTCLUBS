@@ -51,22 +51,14 @@
     }
   }
   .sports {
-    width: 100%;
     display: flex;
+    padding: 0;
     margin: 30px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: none;
     align-items: center;
     .card {
       width: 100%;
-    }
-  }
-  footer{
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
-    .content-right{
-        width: 100%;
     }
   }
 }

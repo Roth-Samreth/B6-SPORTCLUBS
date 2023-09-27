@@ -51,10 +51,11 @@
     }
   }
   .gym-content {
-    width: 100%;
     display: flex;
+    padding: 0;
     margin: 30px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: none;
     align-items: center;
     .card {
       width: 100%;
