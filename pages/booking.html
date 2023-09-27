@@ -14,14 +14,14 @@
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li>
+                <a href="feedback.html">FeedBack<i class="material-icons">headset_mic</i></a>
+            </li>
+            <li>
                 <a href="#">All Sport<i class="material-icons">arrow_drop_down</i></a>
                 <ul class="dropdown">
                     <li><a href="matchsport.html">Sports</a></li>
                     <li><a href="gymsport.html">Gym</a></li>
                 </ul>
-            </li>
-            <li>
-                <a href="feedback.html">FeedBack<i class="material-icons">headset_mic</i></a>
             </li>
             <li>
                 <a href="#">Account</a>
@@ -33,20 +33,18 @@
         </ul>
     </nav>
     <main>
-        <div class="vdo">
+        <div class="form">
             <video loop autoplay muted>
                 <source src="../Video/2019 Snap Fitness Commercial.mkv">
                 <source src="../Video/A.Y.A Sports Club- Official Promo Video_2.mp4">
             </video>
-        </div>
-        <div class="form">
             <form>
                 <div class="tittle">
-                    <h1>Booking forms</h1>
+                    <h1>Booking Form</h1>
                 </div>
                 <div class="full-name">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" name="full-name" id="full-name" placeholder="Enter your name">
+                    <label for="name">Your Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" pattern="[A-Z]*">
                 </div>
                 <div class="email">
                     <label for="email">Email</label>
@@ -54,7 +52,7 @@
                 </div>
                 <div class="phone">
                     <label for="number">Phone</label>
-                    <input type="number" name="number" id="number" placeholder="Your phone number">
+                    <input type="tel" name="number" id="number" placeholder="Your phone number">
                 </div>
                 <div class="types">
                     <label for="type">Type</label>
@@ -75,8 +73,9 @@
                         <input type="time" name="time" id="time">
                     </div>
                 </div>
+                
                 <div class="submit">
-                    <button>submit</button>
+                    <button type="submit">Submit</button>
                 </div>
             </form>
         </div>

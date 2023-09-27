@@ -8,50 +8,37 @@ main{
     align-items: center;
     form{
         background: paleturquoise;
-        height: 75vh;
+        height: 60vh;
         width: 30%;
-    }
-    h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .password, .google, .forgot-pw, .log-in, .or, .facebook, p{
-        margin-top: 15px;
-    }
-    .email input, .password input{
-        width: 80%;
-        padding-left: 15px;
-    }
-    .email input, .password input, button{
-        height: 6vh;
-        width: 86%;
-        border: rgb(174, 76, 76);
-        border-radius: 7px;
-        margin: 0 25px 0 25px;
-    }
-    .log-in button{
-        background: orange;
-    }
-    .google button, .facebook button{
-        background: orange;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .google button{
-        background-color: white;
-    }
-    .forgot-pw{
-        display: flex;
-        justify-content: center;
-        color: blue;
-    }
-    p{
-        display: flex;
-        justify-content: center;
-    }
-    p span{
-        color: blue;
+        .input input{
+            width: 90%;
+            height: 5vh;
+            margin-top: 20px;
+            padding: 0 10px;
+            border: none;
+            border-bottom: 2px solid black;
+            background: none;
+        }
+        input:focus {
+            outline: none;
+            border-bottom: 2px solid orange;
+            padding: 0 10px;
+        }
+        .forgot-pw, .log-in, button, p, .logo{
+            margin-top: 15px;
+        }
+        button{
+            background: orange;
+            height: 4vh;
+            width: 70%;
+            border-radius: 90px;
+            border: none;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
     }
 }

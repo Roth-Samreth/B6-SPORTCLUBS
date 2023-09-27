@@ -1,19 +1,39 @@
-@import"mixin";
-a{
-    text-decoration: none;
-    button{
-        background-color: $primary;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-        border: none;
-        color: white;
-        @include dis-flex;
-        flex-direction: row;
-        align-items: center;
-        a{
-            color: white; 
-        }
-    
+@import "mixin";
+a {
+  text-decoration: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, $primary 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: 2px solid white;
+  button {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: all 0.2s ease;
+    border: none;
+    color: white;
+    @include dis-flex;
+    flex-direction: row;
+    align-items: center;
+    a {
+      color: white;
     }
+  }
+  button:active {
+    transform: scale(0.8);
+  }
+}
+a:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+  button{
+    color: white;
+  }
+}
+a:active {
+  transform: scale(0.8);
 }

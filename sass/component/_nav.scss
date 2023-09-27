@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 nav{
-    background: transparent;
+    background: $bg-color;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -35,6 +35,7 @@ ul li a{
     font-size: 20px;
     display: flex;
     align-items: center;
+    border: none;
 }
 ul li ul.dropdown li{
     display: block;
@@ -48,9 +49,39 @@ ul li ul.dropdown{
 }
 ul li a:hover {
     background-color: #ccc;
-    color: #000;
+    color: white;
 }
 ul li:hover ul.dropdown{
     transition: 0.5s ease;
     display: block;
+}
+@media (max-width: 1024px){
+    nav {
+        display: flex;
+        gap: 10px;
+        ul{
+    
+          li{
+            a{
+              padding: 10px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+}
+@media (max-width: 600px){
+    nav {
+        display: flex;
+        gap: 10px;
+        ul{
+    
+          li{
+            a{
+              padding-right: 5px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
 }

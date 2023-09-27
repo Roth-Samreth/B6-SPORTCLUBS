@@ -26,35 +26,49 @@ header{
 
 .discription {
     background-color: #fff;
-    padding: 60px;
-    min-height: 500px;
     @include dis-flex;
     justify-content: space-between;
-    .disc-top {
-        display: flex;
-        padding: 25px;
-
-        h1 {
-            width: 400px;
-            text-align: center;
-        }
-
-        p {
-            font-size: 20px;
-            width: 550px;
-            flex-shrink: 0;
-        }
-    }
-    .disc-bottom {
+    min-height: 500px;
+    padding: 60px;
+    .first__text{
         width: 100%;
         @include dis-flex;
         flex-direction: row;
         justify-content: space-between;
-        .disc-right,.disc-left{
+        align-items: flex-start;
+        .question{
             width: 50%;
-            max-width: 633px;
-            padding: 30px;
-            text-align: justify;
+            max-width: 643px;
+            h1{
+                font-size: 60px;
+            }
+        }
+        .__text{
+            width: 50%;
+            max-width: 643px;
+            padding: 10px;
+            p{
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
+
+    }
+    .second__text{
+        width: 100%;
+        @include dis-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .second__text1{
+            width: 50%;
+            max-width: 643px;
+            @include dis-flex;
+            gap: 20px;
+            padding: 10px;
+            p{
+                font-size: 20px;
+            }
         }
     }
 }
@@ -101,3 +115,4 @@ header{
         padding: 0 10px;
     } 
 }
+@import "../responsive/matchsport_tablet";

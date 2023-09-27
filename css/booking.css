@@ -2,12 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 a {
   text-decoration: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #E1811F 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: 2px solid white;
 }
 a button {
-  background-color: #E1811F;
+  background-color: transparent;
   padding: 10px;
-  margin: 10px;
   border-radius: 5px;
+  border: 2px solid black;
+  transition: all 0.2s ease;
   border: none;
   color: white;
   display: flex;
@@ -19,6 +26,22 @@ a button {
 }
 a button a {
   color: white;
+}
+a button:active {
+  transform: scale(0.8);
+}
+
+a:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+}
+a:hover button {
+  color: white;
+}
+
+a:active {
+  transform: scale(0.8);
 }
 
 footer {
@@ -68,6 +91,28 @@ iframe {
   width: 100%;
 }
 
+@media (max-width: 1024px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+  footer .content-right {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+  footer .content-right {
+    width: 100%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -89,7 +134,7 @@ body {
 }
 
 nav {
-  background: transparent;
+  background: #3E4148;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   display: flex;
@@ -122,6 +167,7 @@ ul li a {
   font-size: 20px;
   display: flex;
   align-items: center;
+  border: none;
 }
 
 ul li ul.dropdown li {
@@ -138,7 +184,7 @@ ul li ul.dropdown {
 
 ul li a:hover {
   background-color: #ccc;
-  color: #000;
+  color: white;
 }
 
 ul li:hover ul.dropdown {
@@ -146,6 +192,26 @@ ul li:hover ul.dropdown {
   display: block;
 }
 
+@media (max-width: 1024px) {
+  nav {
+    display: flex;
+    gap: 10px;
+  }
+  nav ul li a {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    gap: 10px;
+  }
+  nav ul li a {
+    padding-right: 5px;
+    font-size: 14px;
+  }
+}
 .vdo {
   width: 50%;
   height: 100%;
@@ -165,10 +231,10 @@ ul li:hover ul.dropdown {
   align-items: center;
   width: 50%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
 }
 .form form {
-  width: 60%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 90%;
   border-radius: 15px;
   padding: 10px;
 }
@@ -178,7 +244,10 @@ ul li:hover ul.dropdown {
   justify-content: center;
   align-items: center;
 }
-.form .full-name, .form .email, .form .phone, .form .feedback {
+.form .full-name,
+.form .email,
+.form .phone,
+.form .feedback {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -192,10 +261,17 @@ ul li:hover ul.dropdown {
   padding-left: 10px;
   padding-right: 10px;
   border: none;
+  outline: none;
+}
+.form input:focus {
+  outline: none;
 }
 .form input:invalid {
   animation: invalid 0.3s 2;
-  border: 2px solid #e70707;
+  border: 5px solid #e70707;
+}
+.form input:invalid input:focus {
+  outline: none;
 }
 @keyframes invalid {
   25% {
@@ -208,7 +284,9 @@ ul li:hover ul.dropdown {
     translate: 6px 0;
   }
 }
-.form .full-name input, .form .email input, .form .phone input {
+.form .full-name input,
+.form .email input,
+.form .phone input {
   height: 7vh;
   border-radius: 6px;
 }
@@ -225,121 +303,92 @@ ul li:hover ul.dropdown {
   border: none;
 }
 
+.dates {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+  }
+  .form form {
+    width: 80%;
+  }
+  .form form .tittle h1 {
+    font-size: 20px;
+  }
+}
+nav {
+  z-index: 11;
+}
+
 main {
   background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
   height: 80vh;
   width: 100%;
   color: white;
   display: flex;
-  align-items: center;
-}
-main form {
-  height: 66vh;
-  width: 30%;
-  padding: 0 20px 0 20px;
-  margin-left: 35px;
-  border-radius: 15px;
-}
-main h1 {
-  color: white;
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-main .full-name, main .email, main .phone {
-  display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  align-items: center;
+  flex-direction: row;
 }
-main .phone {
-  margin-bottom: 10px;
-}
-main .type {
+
+.type {
   display: flex;
   gap: 10px;
   padding-left: 33px;
 }
-main .personal, main .partner {
+
+.personal, .partner {
   gap: 12px;
 }
-main .dates {
+
+.dates {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   gap: 6px;
 }
-main .date, main .time {
+
+.date, .time {
   display: flex;
   flex-direction: column;
 }
-main .submit {
+
+.submit {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }
-main input {
+
+input {
   height: 4vh;
   padding-left: 10px;
   border-radius: 5px;
   border: none;
 }
-main .date input {
+
+.date input {
   width: 200px;
 }
-main .time input {
+
+.time input {
   width: 150px;
 }
-main button {
-  background: orange;
-  height: 5vh;
-  width: 100px;
-  color: white;
-  border-radius: 5px;
-  border: none;
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form {
+  z-index: 1;
 }
 
 footer {
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 30px;
+  z-index: 111;
 }
-
-.content-left {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  align-items: start;
-  justify-content: space-between;
-  color: white;
-  gap: 40px;
-}
-
-.content-right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.list {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-direction: row;
-  justify-content: start;
-  gap: 20px;
-}
-
-iframe {
-  width: 100%;
-}/*# sourceMappingURL=booking.css.map */

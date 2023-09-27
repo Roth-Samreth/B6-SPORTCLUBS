@@ -1,74 +1,53 @@
-@media (max-width: 1024px){
-  nav{
-      font-size: 10px;
+@media (max-width: 1024px) {
+  .logo img {
+    width: 50px;
   }
-  .logo img{
-      width: 50px;
-  }
-  .service .container{
-      display: flex;
-      flex-wrap: wrap;
-      .box{
-        width: 95px;
+  .service .container {
+    display: flex;
+    flex-wrap: wrap;
+    .box {
+      width: 95px;
+    }
+    .image {
+      img {
+        width: 80px;
       }
-      .image{
-        img{
-          width: 80px;
-        }
-      }
+    }
   }
-  .mission{
-      flex-wrap: wrap;
+  .mission {
+    justify-content: none;
+    flex-wrap: wrap;
   }
   .vision-container,
-  .mission-container{
-      width: 100%;
+  .mission-container {
+    width: 100%;
   }
-  footer{
-      display: flex;
-      flex-wrap: wrap;
-      height: auto;
-      gap: 10px;
-      .content-right{
-        width: 90%;
-      }
-  }
-  
 }
-@media (max-width: 600px){
-  nav{
-      font-size: 10px;
+@media (max-width: 600px) {
+  nav {
+    font-size: 10px;
   }
-  .logo img{
-      width: 50px;
+  .logo img {
+    width: 50px;
   }
-  .service .container{
-      display: flex;
-      flex-wrap: wrap;
-      .box{
-        width: 95px;
+  .service .container {
+    display: flex;
+    flex-wrap: wrap;
+    .box {
+      width: 95px;
+    }
+    .image {
+      img {
+        width: 80px;
       }
-      .image{
-        img{
-          width: 80px;
-        }
-      }
+    }
   }
-  .mission{
-      flex-wrap: wrap;
+  .mission {
+    justify-content: none;
+    flex-wrap: wrap;
   }
   .vision-container,
-  .mission-container{
-      width: 100%;
+  .mission-container {
+    width: 100%;
   }
-  footer{
-      display: flex;
-      flex-wrap: wrap;
-      height: auto;
-      gap: 10px;
-      .content-right{
-        width: 90%;
-      }
-  }
-  
 }

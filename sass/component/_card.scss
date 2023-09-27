@@ -19,7 +19,45 @@
         @include dis-flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 10px;
+        padding: 10px;
         align-content: center;
     }
+    a {
+        text-decoration: none;
+        background: linear-gradient(to right, $primary 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.5s ease-out;
+        border: 2px solid black;
+        border-radius: 5px;
+        button {
+          background-color: transparent;
+          padding: 10px;
+          border-radius: 5px;
+          border: 2px solid black;
+          transition: all 0.2s ease;
+          border: none;
+          color: black;
+          @include dis-flex;
+          flex-direction: row;
+          align-items: center;
+          a {
+            color: white;
+          }
+        }
+        button:active {
+          transform: scale(0.8);
+        }
+      }
+      a:hover {
+        background-position: left bottom;
+        color: white;
+        border: 2px solid white;
+        button{
+          color: white;
+        }
+      }
+      a:active {
+        transform: scale(0.8);
+      }
 }
