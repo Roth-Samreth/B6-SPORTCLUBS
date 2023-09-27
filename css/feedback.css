@@ -229,14 +229,14 @@ ul li:hover ul.dropdown {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 40%;
   height: 100%;
 }
 .form form {
   background: rgba(0, 0, 0, 0.7);
   width: 90%;
   border-radius: 15px;
-  padding: 10px;
+  padding: 20px;
 }
 .form h1 {
   color: white;
@@ -247,7 +247,8 @@ ul li:hover ul.dropdown {
 .form .full-name,
 .form .email,
 .form .phone,
-.form .feedback {
+.form .feedback, .form .password,
+.form .forgot-pw, .form .log, .form .social {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -286,7 +287,8 @@ ul li:hover ul.dropdown {
 }
 .form .full-name input,
 .form .email input,
-.form .phone input {
+.form .phone input,
+.form .password input {
   height: 7vh;
   border-radius: 6px;
 }

@@ -11,13 +11,13 @@
 }
 .form {
   @include dis-flex;
-  width: 50%;
+  width: 40%;
   height: 100%;
   form {
     background: rgba(0, 0, 0, 0.7);
     width: 90%;
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
   }
   h1 {
     color: white;
@@ -28,7 +28,8 @@
   .full-name,
   .email,
   .phone,
-  .feedback {
+  .feedback,.password,
+  .forgot-pw,.log,.social{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -67,7 +68,8 @@
   }
   .full-name input,
   .email input,
-  .phone input {
+  .phone input,
+  .password input {
     height: 7vh;
     border-radius: 6px;
   }
