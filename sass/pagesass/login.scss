@@ -3,10 +3,55 @@
 main{
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     form{
         background: paleturquoise;
         height: 75vh;
         width: 30%;
-        
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .password, .google, .forgot-pw, .log-in, .or, .facebook, p{
+        margin-top: 15px;
+    }
+    .email input, .password input{
+        width: 80%;
+        padding-left: 15px;
+    }
+    .email input, .password input, button{
+        height: 6vh;
+        width: 86%;
+        border: rgb(174, 76, 76);
+        border-radius: 7px;
+        margin: 0 25px 0 25px;
+    }
+    .log-in button{
+        background: orange;
+    }
+    .google button, .facebook button{
+        background: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .google button{
+        background-color: white;
+    }
+    .forgot-pw{
+        display: flex;
+        justify-content: center;
+        color: blue;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+    }
+    p span{
+        color: blue;
     }
 }
