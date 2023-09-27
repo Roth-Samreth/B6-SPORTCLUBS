@@ -291,8 +291,11 @@ footer .list {
     display: flex;
     flex-wrap: wrap;
   }
+  .service .container .box {
+    width: 95px;
+  }
   .service .container .image img {
-    width: 50px;
+    width: 80px;
   }
   .mission {
     flex-wrap: wrap;
@@ -303,6 +306,11 @@ footer .list {
   }
   footer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+  footer .content-right {
+    width: 90%;
   }
 }
