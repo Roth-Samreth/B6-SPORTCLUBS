@@ -208,8 +208,8 @@ ul li:hover ul.dropdown {
     gap: 10px;
   }
   nav ul li a {
-    padding: 0 5px;
-    font-size: 10px;
+    padding-right: 5px;
+    font-size: 14px;
   }
 }
 .card {
