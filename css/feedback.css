@@ -44,7 +44,7 @@ a:active {
 }
 
 footer {
-  background: #000;
+  background: #8f6464;
   height: 250px;
   display: flex;
   justify-content: center;
@@ -247,7 +247,8 @@ ul li:hover ul.dropdown {
 .form .email,
 .form .phone,
 .form .feedback, .form .password,
-.form .forgot-pw, .form .log, .form .social {
+.form .forgot-pw, .form .log, .form .social,
+.form .log-in {
   display: flex;
   flex-direction: column;
 }
@@ -287,7 +288,8 @@ ul li:hover ul.dropdown {
 .form .full-name input,
 .form .email input,
 .form .phone input,
-.form .password input {
+.form .password input,
+.form .log-in input {
   padding: 10px;
   border-radius: 6px;
 }
@@ -308,6 +310,28 @@ ul li:hover ul.dropdown {
   flex-wrap: wrap;
 }
 
+@media (max-width: 1024px) {
+  .form {
+    width: 100%;
+    height: 100%;
+  }
+  .form video {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .form form {
+    width: 60%;
+  }
+  .form form .tittle h1 {
+    font-size: 20px;
+  }
+  .form form .social .logo img {
+    width: 30px;
+  }
+  .footer {
+    z-index: 1;
+  }
+}
 @media (max-width: 600px) {
   .form {
     width: 100%;

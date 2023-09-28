@@ -44,7 +44,7 @@ a:active {
 }
 
 footer {
-  background: #000;
+  background: #8f6464;
   height: 250px;
   display: flex;
   justify-content: center;
@@ -267,6 +267,7 @@ a button {
   height: 500px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
 }
 .card .box, .card .box1, .card .box2, .card .box3, .card .box4,
 .card .box5, .card .box6, .card .box7, .card .box8 {
@@ -296,17 +297,17 @@ a button {
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
-  border: 2px solid black;
+  border: 2px solid #000;
   border-radius: 5px;
 }
 .card a button {
   background-color: transparent;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 2px solid #000;
   transition: all 0.2s ease;
   border: none;
-  color: black;
+  color: #000;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -315,18 +316,18 @@ a button {
   align-items: center;
 }
 .card a button a {
-  color: white;
+  color: #fff;
 }
 .card a button:active {
   transform: scale(0.8);
 }
 .card a:hover {
   background-position: left bottom;
-  color: white;
-  border: 2px solid white;
+  color: #fff;
+  border: 2px solid #fff;
 }
 .card a:hover button {
-  color: white;
+  color: #fff;
 }
 .card a:active {
   transform: scale(0.8);
