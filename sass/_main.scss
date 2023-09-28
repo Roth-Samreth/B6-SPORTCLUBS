@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "./component/varibles";
 @import "./component/mixin";
 @import "./component/button";
 @import "./component/footer";
-*{
+* {
   @include universe;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
-    background-color: $bg-color;
-  }
+  background-color: $bg-color;
+}
+::-webkit-scrollbar{
+  background-color: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient($bg-color,$primary,$second-color)
+}

@@ -126,6 +126,15 @@ body {
   background-color: #3E4148;
 }
 
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#3E4148, #E1811F, #fff);
+}
+
 * {
   padding: 0;
   margin: 0;
