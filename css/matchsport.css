@@ -508,15 +508,6 @@ header {
   .gym-content .card {
     width: 49%;
   }
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
-  }
-  footer .content-right {
-    width: 100%;
-  }
 }
 @media (max-width: 600px) {
   .discription {
