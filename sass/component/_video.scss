@@ -17,7 +17,7 @@
     background: rgba(0, 0, 0, 0.7);
     width: 90%;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
   }
   h1 {
     color: white;
@@ -32,7 +32,6 @@
   .forgot-pw,.log,.social{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
   }
   .submit {
     margin-top: 20px;
@@ -90,9 +89,13 @@
 .dates {
   flex-wrap: wrap;
 }
-@media (max-width: 600px) {
+@media (max-width: 600px){
   .form {
     width: 100%;
+    height: 100%;
+    video{
+      object-fit: cover;
+    }
     form {
         width: 80%;
       .tittle {
@@ -100,6 +103,16 @@
           font-size: 20px;
         }
       }
+      .social{
+        .logo{
+          img{
+            width: 30px;
+          }
+        }
+      }
     }
+  }
+  .footer{
+    z-index: 1;
   }
 }
