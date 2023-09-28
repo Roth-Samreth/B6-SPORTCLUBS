@@ -382,6 +382,7 @@ form div {
 
 .forgot-pw a {
   border: none;
+  color: #fff;
   align-self: flex-end;
 }
 
