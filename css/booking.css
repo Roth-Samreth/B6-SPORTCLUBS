@@ -202,7 +202,7 @@ nav {
     display: flex;
     gap: 10px;
     font-size: 10px;
-    padding: 0 30px;
+    padding: 0;
   }
 }
 
@@ -217,6 +217,11 @@ nav {
 
 ul.center {
   list-style-type: none;
+}
+@media screen and (max-width: 600px) {
+  ul.center {
+    display: none;
+  }
 }
 
 ul li {
@@ -269,6 +274,47 @@ ul li a:hover {
 ul li:hover ul.dropdown {
   transition: 0.5s ease;
   display: block;
+}
+
+input {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  input {
+    display: block;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding: 9px 25px;
+    border-radius: 5px;
+  }
+}
+
+input::before {
+  content: url(../../Image/Icon/Menu.png);
+  color: white;
+}
+
+input:checked::before {
+  content: url(../../Image/Icon/close.png);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  input:checked ~ ul.center {
+    align-self: center;
+    width: 100%;
+    background-color: #959697;
+    display: block;
+    position: absolute;
+    top: 54px;
+    right: 1px;
+    transition: 0.5 ease;
+  }
+  input:checked ~ ul.center li {
+    display: block;
+    margin-right: 15px;
+  }
 }
 
 .vdo {
