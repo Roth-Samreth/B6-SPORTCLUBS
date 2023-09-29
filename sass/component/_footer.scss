@@ -1,11 +1,26 @@
 @import "../component/mixin";
+@import "../responsive/responsive";
 footer{
     background: #000;
     height: 250px;
     @include dis-flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px;
+    padding: 60px;
+    @include responsive(tablet){
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+        padding: 30px;
+    }
+    @include responsive(phone){
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+        padding: 30px;
+    }
 }
 .content-left{
     @include dis-flex;
@@ -15,10 +30,32 @@ footer{
     gap: 40px;
 }
 .content-right{
-    width: 50%;
+    width: 40%;
+    height: 50%;
     @include dis-flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    color: white;
+    @include responsive(tablet){
+        width: 100%;
+    }
+    @include responsive(phone){
+        width: 100%;
+    }
+    .right-title{
+        color: $second-color;
+        align-self: center;
+    }
+    .social-media{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .item{
+            @include dis-flex;
+            gap: 5px;
+        }
+    }
 }
 .list{
     @include dis-flex;
@@ -26,28 +63,15 @@ footer{
     justify-content: start;
     gap: 20px;
 }
-iframe{
-    width: 100%;
-}
-@media (max-width: 1024px){
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        gap: 10px;
-        .content-right{
-            width: 100%;
-        }
-      }
-}
-@media (max-width: 600px){
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        gap: 10px;
-        .content-right{
-            width: 100%;
-        }
-      }
+.map-container{
+    padding: 60px;
+    @include responsive(tablet){
+        padding: 30px;
+    }
+    @include responsive(phone){
+        padding: 30px;
+    }
+    iframe{
+        width: 100%;
+    }
 }

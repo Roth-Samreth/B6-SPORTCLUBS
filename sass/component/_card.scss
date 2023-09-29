@@ -1,10 +1,10 @@
 @import "../component/varibles";
 .card{
     max-width: 320px;
-    height: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    box-shadow:  0 5px $second-color, 0 0 5px $second-color, 0 0 5px $second-color, 0 0 5px $second-color, 0 0 5px $second-color;
+    box-shadow:  0 5px $text-color, 0 0 5px $text-color, 0 0 5px $text-color, 0 0 5px $text-color 0 0 5px $text-color;
     .box,.box1,.box2,.box3,.box4,
     .box5,.box6,.box7,.box8{ 
         background-repeat: no-repeat;

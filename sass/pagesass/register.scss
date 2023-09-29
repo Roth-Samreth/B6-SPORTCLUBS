@@ -49,6 +49,13 @@ form{
         justify-content: space-evenly;
         img{
             width: 50px;
+            width: 50px;
+            @include responsive(tablet){
+            width: 30px;
+           }
+           @include responsive(phone){
+            width: 30px;
+           }
         }
     }
 }

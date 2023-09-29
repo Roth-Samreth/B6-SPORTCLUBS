@@ -30,23 +30,51 @@ header{
     justify-content: space-between;
     min-height: 500px;
     padding: 60px;
+    @include responsive(tablet){
+        padding: 30px;
+    }
     .first__text{
         width: 100%;
         @include dis-flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        @include responsive(tablet){
+            display: inline-flex;
+            flex-direction: column;
+        }
+        @include responsive(phone){
+            display: inline-flex;
+            flex-direction: column;
+        }
         .question{
             width: 50%;
             max-width: 643px;
+            @include responsive(tablet){
+                width: 100%;
+            }
+            @include responsive(phone){
+                width: 100%;
+            }
             h1{
                 font-size: 60px;
+                @include responsive(tablet){
+                    font-size: 30px;
+                    text-align: center;
+                }
+                @include responsive(phone){
+                    font-size: 30px;
+                    text-align: center;
+                }
             }
         }
         .__text{
             width: 50%;
             max-width: 643px;
             padding: 10px;
+            @include responsive(tablet){
+                width: 100%;
+            }
             p{
                 font-size: 20px;
                 text-align: justify;
@@ -79,10 +107,31 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    @include responsive(tablet){
+        display: flex;
+        padding: 30px;
+        margin: 0;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    @include responsive(phone){
+        display: flex;
+        padding: 0;
+        margin: 30px;
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+    }
 }
 .card{
     background-color: #fff;
     border-radius: 10px;
+    @include responsive(tablet){
+        width: 49%;
+    }
+    @include responsive(phone){
+        width: 100%;
+    }
     .box {
         background-image: url(../../Image/Sports/Rothanak.jpg);
     }
@@ -115,4 +164,3 @@ header{
         padding: 0 10px;
     } 
 }
-@import "../responsive/matchsport_tablet";

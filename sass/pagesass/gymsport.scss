@@ -1,104 +1,154 @@
-@import"../main";
-@import"../component/nav";
+@import "../main";
+@import "../component/nav";
 @import "../component/header";
 @import "../component/card";
 @import "../component/favorite";
-*{
-    @include universe;
+* {
+  @include universe;
 }
-header{
-    background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
-    justify-content: center;
+header {
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  justify-content: center;
 }
-.some-text{
-    background-color: #fff;
-    @include dis-flex;
-    justify-content: space-between;
-    min-height: 500px;
-    padding: 60px;
-    .first__text{
-        width: 100%;
-        @include dis-flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        .question{
-            width: 50%;
-            max-width: 643px;
-            h1{
-                font-size: 60px;
-            }
-        }
-        .__text{
-            width: 50%;
-            max-width: 643px;
-            padding: 10px;
-            p{
-                font-size: 20px;
-                text-align: justify;
-            }
-        }
-
-    }
-    .second__text{
-        width: 100%;
-        @include dis-flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        .second__text1{
-            width: 50%;
-            max-width: 643px;
-            @include dis-flex;
-            gap: 20px;
-            padding: 10px;
-            p{
-                font-size: 20px;
-            }
-        }
-    }
-}
-.gym-content{
-    padding: 60px;
+.some-text {
+  background-color: #fff;
+  @include dis-flex;
+  justify-content: space-between;
+  min-height: 500px;
+  padding: 60px;
+  @include responsive(tablet) {
+    padding: 30px;
+  }
+  .first__text {
+    width: 100%;
     @include dis-flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    @include responsive(tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+    .question {
+      width: 50%;
+      max-width: 643px;
+      @include responsive(tablet) {
+        width: 100%;
+      }
+      @include responsive(phone) {
+        width: 100%;
+      }
+      h1 {
+        font-size: 60px;
+        @include responsive(tablet) {
+          font-size: 30px;
+          text-align: center;
+        }
+        @include responsive(phone) {
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+    }
+    .__text {
+      width: 50%;
+      max-width: 643px;
+      padding: 10px;
+      @include responsive(tablet) {
+        width: 100%;
+      }
+      @include responsive(phone) {
+        width: 100%;
+      }
+      p {
+        font-size: 20px;
+        text-align: justify;
+      }
+    }
+  }
+  .second__text {
+    width: 100%;
+    @include dis-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    .second__text1 {
+      width: 50%;
+      max-width: 643px;
+      @include dis-flex;
+      gap: 20px;
+      padding: 10px;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+.gym-content {
+  padding: 60px;
+  @include dis-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  @include responsive(tablet) {
+    display: flex;
+    padding: 30px;
+    margin: 0;
     flex-wrap: wrap;
-    gap: 30px;
+    align-items: center;
+  }
+  @include responsive(phone) {
+    display: flex;
+    padding: 0;
+    margin: 30px;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
 }
-.card{
-    background-color: #fff;
-    border-radius: 10px;
-    .box{
-        background-image: url(../../Image/Gymnastic/Cycling.jpg);
-    }
-    .box1{
-        background-image: url(../../Image/Gymnastic/Cable\ Chest\ Press..jpg);
-    }
-    .box2{
-        background-image: url(../../Image/Gymnastic/john-arano-h4i9G-de7Po-unsplash.jpg);
-    }
-    .box3{
-        background-image: url(../../Image/Gymnastic/Bar\ Press.jpg);
-    }
-    .box4{
-        background-image: url(../../Image/Gymnastic/Gym02.jpg);
-    }
-    .box5{
-        background-image: url(../../Image/Gymnastic/yoga.jpg);
-    }
-    .box6{
-        background-image: url(../../Image/Gymnastic/Dumbbell\ Chest\ Press..jpg);
-    }
-    .box7{
-        background-image: url(../../Image/Gymnastic/Dumbbell\ rows.webp);
-    }
-    .box8{
-        background-image: url(../../Image/Gymnastic/Iron\ strong\ fitness.webp);
-    }
-    .description{
-        @include dis-flex;
-        padding: 0 10px;
-    }
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  @include responsive(tablet) {
+    width: 49%;
+  }
+  @include responsive(phone) {
+    width: 100%;
+  }
+  .box {
+    background-image: url(../../Image/Gymnastic/Cycling.jpg);
+  }
+  .box1 {
+    background-image: url(../../Image/Gymnastic/Cable\ Chest\ Press..jpg);
+  }
+  .box2 {
+    background-image: url(../../Image/Gymnastic/john-arano-h4i9G-de7Po-unsplash.jpg);
+  }
+  .box3 {
+    background-image: url(../../Image/Gymnastic/Bar\ Press.jpg);
+  }
+  .box4 {
+    background-image: url(../../Image/Gymnastic/Gym02.jpg);
+  }
+  .box5 {
+    background-image: url(../../Image/Gymnastic/yoga.jpg);
+  }
+  .box6 {
+    background-image: url(../../Image/Gymnastic/Dumbbell\ Chest\ Press..jpg);
+  }
+  .box7 {
+    background-image: url(../../Image/Gymnastic/Dumbbell\ rows.webp);
+  }
+  .box8 {
+    background-image: url(../../Image/Gymnastic/Iron\ strong\ fitness.webp);
+  }
+  .description {
+    @include dis-flex;
+    padding: 0 10px;
+  }
 }
-@import "../responsive/gymsport_tablet";

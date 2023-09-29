@@ -1,86 +1,80 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+@import "varibles";
+@import "../responsive/responsive";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
-nav{
-    background: $bg-color;
-    backdrop-filter: blur(10px);
+nav {
+  background: $bg-color;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  position: sticky;
+  top: 0;
+  @include responsive(tablet) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 10px;
     padding: 0 30px;
-    position: sticky;
-    top: 0;
-}
-.logo img{
-    width:80px;
-    
-}
-ul.center{
-    list-style-type: none;
-}
-ul li{
-    display: inline-block;
-    position: relative;
-    
-}
-ul li a{
-    color: white;
-    display: block;
-    padding: 20px 25px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
+  }
+  @include responsive(phone) {
     display: flex;
-    align-items: center;
-    border: none;
+    gap: 10px;
+    font-size: 10px;
+    padding: 0 30px;
+  }
 }
-ul li ul.dropdown li{
-    display: block;
+.logo img {
+  width: 80px;
+  @include responsive(phone){
+    width: 50px;
+  }
 }
-ul li ul.dropdown{
-    width: 100%;
-    background-color: black;
-    position: absolute;
-    z-index: 999;
-    display: none;
+ul.center {
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+ul li a {
+  color: rgb(16, 14, 14);
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  border: none;
+  @include responsive(tablet) {
+    padding: 10px;
+    font-size: 20px;
+  }
+  @include responsive(phone) {
+    padding-right: 5px;
+    font-size: 14px;
+  }
+}
+ul li ul.dropdown li {
+  display: block;
+}
+ul li ul.dropdown {
+  width: 100%;
+  background-color: $bg-color;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  border-radius: 0 0 10px 10px;
 }
 ul li a:hover {
-    background-color: #ccc;
-    color: white;
+  background-color: #ccc;
+  color: white;
 }
-ul li:hover ul.dropdown{
-    transition: 0.5s ease;
-    display: block;
+ul li:hover ul.dropdown {
+  transition: 0.5s ease;
+  display: block;
 }
-@media (max-width: 1024px){
-    nav {
-        display: flex;
-        gap: 10px;
-        ul{
-    
-          li{
-            a{
-              padding: 10px;
-              font-size: 20px;
-            }
-          }
-        }
-      }
-}
-@media (max-width: 600px){
-    nav {
-        display: flex;
-        gap: 10px;
-        ul{
-    
-          li{
-            a{
-              padding-right: 5px;
-              font-size: 14px;
-            }
-          }
-        }
-      }
-}
+
