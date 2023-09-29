@@ -1,13 +1,13 @@
-input {
+#heart {
     appearance: none;
     padding: 9px 25px;
     border-radius: 5px;
 }
-input::before {
+#heart::before {
     content: url(../../Image/Icon/heart01.png);
     color: white;
 }
-input:checked::before {
+#heart:checked::before {
     content: url(../../Image/Icon/heart.png);
     color: white;
 }
