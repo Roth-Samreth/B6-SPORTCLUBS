@@ -504,7 +504,7 @@ a button {
   background-color: #fff;
   min-width: 320px;
   width: 30%;
-  height: 450px;
+  height: 470px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -564,7 +564,7 @@ a button {
 @media screen and (max-width: 1024px) {
   .trainers .trainer-container .trainer {
     width: 45%;
-    height: 400px;
+    height: 500px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -579,7 +579,7 @@ a button {
 .trainers .trainer-container .trainer:hover .member1,
 .trainers .trainer-container .trainer:hover .member2 {
   transition: 0.5s ease;
-  height: 70%;
+  height: 60%;
 }
 .trainers .trainer-container .trainer:hover .member .title,
 .trainers .trainer-container .trainer:hover .member1 .title,
@@ -588,7 +588,7 @@ a button {
   transition: 0.5s ease;
 }
 .trainers .trainer-container .trainer:hover .member-info {
-  height: 25%;
+  height: 40%;
   transition: 0.5s ease;
   padding: 10px;
 }
@@ -599,6 +599,16 @@ a button {
 }
 .trainers .trainer-container .trainer:hover .member-info p {
   text-align: justify;
+}
+@media screen and (max-width: 1024px) {
+  .trainers .trainer-container .trainer:hover .member-info p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .trainers .trainer-container .trainer:hover .member-info p {
+    font-size: 12px;
+  }
 }
 
 .mission {

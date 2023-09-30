@@ -94,7 +94,7 @@
       background-color: #fff;
       min-width: 320px;
       width: 30%;
-      height: 450px;
+      height: 470px;
       @include dis-flex;
       border-radius: 10px;
       justify-content: space-between;
@@ -139,7 +139,7 @@
       }
       @include responsive(tablet) {
         width: 45%;
-        height: 400px;
+        height: 500px;
       }
       @include responsive(phone) {
         width: 100%;
@@ -151,14 +151,14 @@
       .member1,
       .member2 {
         transition: 0.5s ease;
-        height: 70%;
+        height: 60%;
         .title{
           display: none;
           transition: 0.5s ease;
         }
       }
       .member-info {
-        height: 25%;
+        height: 40%;
         transition: 0.5s ease;
         padding: 10px;
         h2 {
@@ -168,6 +168,12 @@
         }
         p {
           text-align: justify;
+          @include responsive (tablet){
+            font-size: 15px;
+          }
+          @include responsive (phone){
+            font-size: 12px;
+          }
         }
       }
     }
