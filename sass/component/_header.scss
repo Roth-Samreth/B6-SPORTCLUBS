@@ -1,41 +1,43 @@
-header{
-    height: 70vh;
-    max-height: 700px;
-    background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-end;
+header {
+  height: 70vh;
+  max-height: 700px;
+  background-image: url(../../Image/Gymnastic/danielle-cerullo-CQfNt66ttZM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  @include responsive(tablet) {
+    height: 65vh;
+  }
+  @include responsive(phone) {
+    height: 50vh;
+  }
 }
-.head-text{
-    background-color: rgba(0,0,0,0.7);
-    width: 50%;
-    max-width: 700px;
-    height: 100%;
-    color: white;
-    @include dis-flex
+.head-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  max-width: 700px;
+  height: 100%;
+  color: white;
+  @include dis-flex;
 }
-.head-text .text1{
-    width: 80%;
-    max-width: 600px;
-    height: 100%;
-    @include dis-flex;
-    justify-content: space-around;
-}
-a{
-    text-decoration: none;
-    align-self: flex-end;
-    button{
-        padding: 10px;
-}
-}
-@media (max-width: 1024px){
-    header{
-        height: 65vh;
+.head-text .text1 {
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  @include dis-flex;
+  justify-content: space-around;
+  @include responsive(phone){
+    h1{
+        font-size: 20px;
     }
+  }
 }
-@media (max-width: 600px){
-    header{
-        height: 50vh;
-    }
+a {
+  text-decoration: none;
+  align-self: flex-end;
+  button {
+    padding: 10px;
+  }
 }
+

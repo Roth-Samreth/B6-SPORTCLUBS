@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 nav {
-  background: $bg-color;
+  background: $second-color;
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -66,14 +66,14 @@ ul li ul.dropdown li {
 }
 ul li ul.dropdown {
   width: 100%;
-  background-color: $bg-color;
+  background-color: $second-color;
   position: absolute;
   z-index: 999;
   display: none;
   border-radius: 0 0 10px 10px;
 }
 ul li a:hover {
-  background-color: #ccc;
+  background-color: $second-color;
   color: white;
 }
 ul li:hover ul.dropdown {
@@ -101,7 +101,7 @@ ul li:hover ul.dropdown {
   @include responsive(phone) {
     align-self: center;
     width: 100%;
-    background-color: $bg-color;
+    background-color: $second-color;
     display: block;
     position: absolute;
     top: 54px;
